@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="185px" height="40px" viewBox="0 0 185 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板@3x</title>
+    <g id="画板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="GDC" font-family="GillSans-UltraBold, Gill Sans" font-size="32" font-weight="700" fill="#131415">
+            <tspan x="5" y="32">GDC</tspan>
+        </text>
+        <text id="motion-design" font-family="GillSans-Light, Gill Sans" font-size="16" font-weight="300" fill="#131415">
+            <tspan x="89" y="30">motion design</tspan>
+        </text>
+        <rect id="矩形" fill="#131415" x="90" y="9" width="20" height="9" rx="4.5"></rect>
+        <text id="UED" font-family="GillSans-Light, Gill Sans" font-size="5" font-weight="300" fill="#FFFFFF">
+            <tspan x="95" y="15">UED</tspan>
+        </text>
+    </g>
+</svg>

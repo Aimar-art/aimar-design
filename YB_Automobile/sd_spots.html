@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../css/mcss.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>GDC动效设计指南</title>
+    <link rel="stylesheet" media="screen" href="../YB_Automobile/transform/css/cpwe.css">
+
+    <!-- javascript -->
+    <!-- javascript -->
+    <!-- javascript -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-88818678-1');
+    </script>
+    <script src="../js/majs.js"></script>
+    <script src="../js/page.js"></script>
+    <script src="../js/index.js"></script>
+
+    <!-- 样式 -->
+    <!-- 样式 -->
+    <!-- 样式 -->
+
+    <style>
+        @import url(../css/mcss.css);
+        @import url(../css/style.css);
+        @import url(../css/index.css);
+    </style>
+</head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-spots qp-ui"
+    data-qp-ui="{ 'Mask': {} }">
+
+    <!-- 头部 -->
+    <!-- 头部 -->
+    <!-- 头部 -->
+    <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+        <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+            <div class="header-title">
+                <span class="section-title">赛道模式仪表表盘动效</span>
+                <span class="chapter-title"><span class="title-separator">–</span> Dynamic effect</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 汉堡菜单 -->
+    <!-- 汉堡菜单 -->
+    <!-- 汉堡菜单 -->
+    <nav>
+        <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+            <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+        </button>
+    </nav>
+
+    <!-- 搜索 -->
+    <!-- 搜索 -->
+    <!-- 搜索 -->
+
+    <form id="search-form" action="https://cn.bing.com/search" method="GET">
+        <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+            <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+            <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+            <input name="q" type="text" id="search-input" autocomplete="off">
+            <label for="search-input">Search</label>
+        </div>
+    </form>
+
+
+    <!-- 侧边栏 -->
+    <!-- 侧边栏 -->
+    <!-- 侧边栏 -->
+
+    <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+        <div class="side-nav-wrapper ">
+            <div>
+                <span id="logo">
+                    <a href="../Dynamic design guide.html">
+                    <img src="../images/s.svg" width="185px" />
+                </a>
+                </span>
+
+                <nav>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">设计指南</dt>
+                        <dd><a href="../ZN_DesignGuide/gs_introduction.html">概述</a><a
+                                href="../ZN_DesignGuide/hj_environment.html">环境</a><a
+                                href="../ZN_DesignGuide/sx_attribute.html">属性</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+                        <dd><a href="YZ_DynamicPrinciple/yz_principle.html">原则</a><a
+                                href="YZ_DynamicPrinciple/qx_easing.html">动画曲线</a><a
+                                href="../motion/movement.html">移动</a><a
+                                href="../motion/transforming-material.html">形变</a><a
+                                href="../motion/choreography.html">组合</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+                        <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+                        <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                                href="../components/bottom-sheets.html">底部卡片</a><a
+                                href="../components/buttons.html">按钮</a><a
+                                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                                href="../components/data-tables.html">数据表格</a><a
+                                href="../components/dialogs.html">对话框</a><a href="../components/dividers.html">分隔线</a><a
+                                href="../components/expansion-panels.html">扩展面板</a><a
+                                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                                href="../components/lists-controls.html">列表控件</a><a
+                                href="../components/menus.html">菜单</a><a href="../components/pickers.html">选择器</a><a
+                                href="../components/progress-activity.html">进度 & 活动状态</a><a
+                                href="../components/selection-controls.html">选择控件</a><a
+                                href="../components/sliders.html">滑块</a><a
+                                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                                href="../components/steppers.html">步进器</a><a
+                                href="../components/subheaders.html">副标题</a><a href="../components/tabs.html">Tab
+                                选项卡</a><a href="../components/text-fields.html">文本框</a><a
+                                href="../components/toolbars.html">工具栏</a><a
+                                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+                        <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                                href="../patterns/data-formats.html">AC</a><a
+                                href="../patterns/empty-states.html">DVR</a><a href="../patterns/errors.html">FOTA</a><a
+                                href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                                href="../patterns/loading-images.html">场景引擎</a><a
+                                href="../patterns/navigation.html">天气服务</a><a
+                                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                                href="../patterns/notifications.html">注册登陆</a><a
+                                href="../patterns/offline-states.html">消息中心</a><a
+                                href="../patterns/permissions.html">系统设置</a><a
+                                href="../patterns/scrolling-techniques.html">能量管理</a><a
+                                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                                href="../patterns/settings.html">违章查询</a><a
+                                href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">仪表</dt>
+                        <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                                href="../growth-communications/onboarding.html">本地功能</a><a
+                                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                                href="../growth-communications/gesture-education.html">经典模式</a><a
+                                href="../YB_Automobile/yy_cross.html">越野模式</a>
+                            <a class="nav_selected" href="../YB_Automobile/sd_spots.html">赛道模式</a>
+                            <a href="../YB_Automobile/bt_light.html">白天模式</a>
+                            <a href="../YB_Automobile/jj_mecha.html">机甲模式</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+                        <dd><a href="../usability/accessibility.html">副屏</a><a
+                                href="../usability/accessibility.html">HUD</a>
+                            <a href="../usability/accessibility.html">智能后视镜</a>
+                            <a href="../usability/bidirectionality.html">车载语音助手</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+                        <dd><a href="../platforms/platform-adaptation.html">KANZI</a><a
+                                href="../platforms/android.html">Android</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+                        <dd><a href="devices/devices.html">动效设计资源</a><a
+                                href="../resources/layout-templates.html">动画术语</a>
+                            <a href="../resources/roboto-noto-fonts.html">字体</a>
+                            <a href="../resources/sticker-sheets-icons.html">插件 & 扩展</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">变更记录</dt>
+                        <dd><a href="devices/devices.html">变更记录</a></dd>
+                    </dl>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文 -->
+    <!-- 正文 -->
+    <!-- 正文 -->
+    <div id="grid-cont">
+        <section class="grid_outer chapter">
+
+            <h1 class="chapter-title">整体效果</h1>
+            <div class="chapter-content">
+
+
+                <!-- 整体效果 -->
+                <div class="article-content chapter-intro">
+                    <div>
+                        <h1>UI版本:UI_10.25_Cluster_Basic_赛道模式B03_20210308.sketch</h1>
+                        <div class="col-list">
+                            <section class="figure col-1">
+                                <div class="figure">
+                                    <figure class="s-tag-media">
+                                        <div class="media" style="max-width: 1520px">
+                                            <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                                                style="padding-top: 37.68%">
+                                                <video controls="" loop="" preload="auto">
+                                                    <source src="../images/Automobile/track_mode.webm"
+                                                        type="video/webm">
+                                                    </source>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </section>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="article-list">
+
+
+                    <!-- 赛道模式UI标注 & 切图 -->
+                    <div id="material-motion-why-does-motion-matter" class="article qp-ui"
+                        data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:1">
+                        <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }"
+                            data-qp-ui-data-id="qp:1">
+                            赛道模式UI标注 & 切图
+
+                        </h2>
+
+                        <div class="article-content">
+                            <div>
+                                <p>UI版本:UI_10.25_Cluster_Basic_赛道模式B03_20210308.sketch</p>
+
+                                <div class="modulettes">
+                                    <a class="modulette container gd" href="../images/guideline/index.html"
+                                        target="_blank">
+                                        <img alt="" class="icon callout-icon"
+                                            src="//cdn.w3cbus.com/mdui.org/design/static/spec/images/callouts/gd.svg"
+                                            loading="lazy">
+                                        <div class="info">
+                                            <span class="subtitle">赛道模式UI标注 & 切图</span>
+                                        </div>
+                                        </img>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 表盘如何运动 -->
+                    <div id="material-motion-how-does-material-move" class="article qp-ui"
+                        data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:2">
+                        <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }"
+                            data-qp-ui-data-id="qp:2">
+                            表盘如何运动
+                        </h2>
+
+                        <div class="article-content">
+                            <div>
+                                <p>仪表界面是一个有纵深感的三维空间, 动效在三维空间伴随着光影特效变化</p>
+                                <p>表盘的动效基础沿用内 & 外环的概念</p>
+                                <div class="col-list">
+                                    <section class="module-figure col-2 h2-spacing">
+                                        <div class="module">
+                                            <h2>仪表表盘动效空间</h2>
+                                            <p>左、右表盘有倾斜角度, 动效的变化发生在倾斜的平面上</p>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media">
+                                                    <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-0"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/XYZ.webm"
+                                                                type="video/webm">
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-0">
+                                                    <p>表盘动效属性的变化, 以自身物理坐标系为基准</p>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="module-figure-figure col-3">
+                                        <div class="module"></div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-1"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/within.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-1">
+                                                    <p>抽象化的表盘的内环结构</p>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-2"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/Outside.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-2">
+                                                    <p>抽象化的表盘外环结构</p>
+
+                                                    </p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 表盘动效细节拆分 -->
+                    <div id="material-motion-what-makes-a-good-transition" class="article qp-ui"
+                        data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:3">
+                        <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }"
+                            data-qp-ui-data-id="qp:3">
+                            表盘动效细节拆分
+
+                        </h2>
+
+                        <div class="article-content">
+                            <div>
+                                <p>表盘运动动效由一下几个模块组成：</p>
+
+
+                                <div class="col-list">
+                                    <section class="module-figure-figure col-3 h2-spacing">
+                                        <div class="module">
+                                            <h2>固定表盘</h2>
+                                            <p>固定表盘动效由基础扫盘/粒子效果/扭矩动效三部分组成。</p>
+
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-6"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/Basics.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-6">
+                                                    <p>基础的指针扫盘动效。</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-7"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/torque.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-7">
+                                                    <p>扭矩动效。</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="module-figure-module col-3">
+                                        <div class="module"></div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-8"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/particle.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-8">
+                                                    <p>表盘粒子指针转动粒子效果。</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="module"></div>
+                                    </section>
+                                </div>
+
+                                <div class="col-list">
+                                    <section class="module-figure col-2 h2-spacing">
+                                        <div class="module">
+                                            <h2>表盘的转场</h2>
+                                            <p>表盘的转场其实是嵌入一段过渡动效,分倒下/立起/倒下循环三个部分</p>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media">
+                                                    <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-3"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/fall.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-3">
+                                                    <p>表盘的一个倒下和立起过程包含:倒下+倒下循环 / 倒下循环+立起</p>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="module-figure-figure col-3">
+                                        <div class="module"></div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-4"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/circle.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-4">
+                                                    <p>表盘倒下状态,立起的动效是可逆的</p>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-5"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/light.webm"
+                                                                type="video/webm">
+
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-5">
+                                                    <p>倒下循环状态</p>
+
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="col-list">
+                                    <section class="module-figure-figure col-3 h2-spacing">
+                                        <div class="module">
+                                            <h2>粒子效果细节</h2>
+                                            <p>粒子的运动旨在增强指针的运动效果,跟随指针做反方向运动</p>
+
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-9"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/area.webm"
+                                                                type="video/webm">
+                                                            <source
+                                                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_01_Focus-v3.mp4"
+                                                                type="video/mp4">
+                                                            </source>
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-9">
+                                                    <p>粒子跟随指针运动的反方向运动,并伴随指针的速率,显示区域伸缩</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 720px">
+                                                    <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                        role="button" style="padding-top: 100.0%">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-10"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/alpha.webm"
+                                                                type="video/webm">
+                                                            <source
+                                                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_03_Disabled-v2.mp4"
+                                                                type="video/mp4">
+                                                            </source>
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <figcaption id="how-does-material-move-figure-caption-10">
+                                                    <p>粒子的出现和消失伴随着透明度的变化</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 动效交付实现 -->
+                    <div id="material-motion-implications-of-motion" class="article qp-ui"
+                        data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:4">
+                        <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }"
+                            data-qp-ui-data-id="qp:4">
+                            动效的交付实现
+
+                        </h2>
+
+                        <div class="article-content">
+                            <div>
+                                <div class="col-list">
+                                    <section class="module-figure-figure col-3">
+                                        <div class="module">
+                                            <p>动效资源的最终输出,会以3D模型+序列帧的形式交付。基础的指针扫光动效交付3D模型、贴图和动态DEMO。粒子效果和表盘的立起/倒下交付动画序列帧。
+                                            </p>
+                                        </div>
+                                        <section class="module-figure col-2 h2-spacing">
+                                            <div class="module">
+                                            </div>
+                                            <div class="figure">
+                                                <figure class="s-tag-media">
+
+                                                    <!-- 3D -->
+                                                    <!-- 3D -->
+                                                    <!-- 3D -->
+
+
+                                                    <div class="sketchfab-embed-wrapper">
+                                                        <iframe title="B03 Dial-5-N" width="640" height="480"
+                                                            src="https://sketchfab.com/models/9c5384d9c35d473e89643e2145f77654/embed">
+                                                        </iframe>
+
+                                                    </div>
+
+
+                                                    <figcaption id="how-does-material-move-figure-caption-3">
+                                                        <p>表盘内 & 外环3D模型</p>
+
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </section>
+                                        <section class="module-figure-figure col-3">
+                                            <div class="module"></div>
+                                            <div class="figure">
+                                                <figure class="s-tag-media">
+                                                    <div class="media" style="max-width: 720px">
+                                                        <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                            role="button" style="padding-top: 100.0%">
+                                                            <video
+                                                                aria-describedby="how-does-material-move-figure-caption-4"
+                                                                controls="" loop="" preload="auto">
+                                                                <source src="../images/Automobile/circle_1.webm"
+                                                                    type="video/webm">
+
+                                                                </source>
+                                                            </video>
+                                                        </div>
+                                                    </div>
+                                                    <figcaption id="how-does-material-move-figure-caption-4">
+                                                        <p>表盘倒下 & 起来动画序列帧输出。</p>
+                                                        <div class="modulettes">
+                                                            <a class="modulette download trackdl" download=""
+                                                                href="../images/devices/Roboto.zip" title="Roboto Font">
+                                                                <img alt="" class="icon download-icon"
+                                                                    src="../images/devices/download.svg" loading="lazy">
+                                                                <div class="info">
+                                                                    <span class="subtitle">表盘倒下 & 起来序列帧下载</span>
+                                                                    </br>
+                                                                    <span class="subtitle">1 MB (.zip) </span>
+                                                                </div>
+                                                                </img>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="figure">
+                                                <figure class="s-tag-media">
+                                                    <div class="media" style="max-width: 720px">
+                                                        <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                            role="button" style="padding-top: 100.0%">
+                                                            <video
+                                                                aria-describedby="how-does-material-move-figure-caption-5"
+                                                                controls="" loop="" preload="auto">
+                                                                <source src="../images/Automobile/p.webm"
+                                                                    type="video/webm">
+
+                                                                </source>
+                                                            </video>
+                                                        </div>
+                                                    </div>
+                                                    <figcaption id="how-does-material-move-figure-caption-5">
+                                                        <p>粒子效果动画序列帧。</p>
+                                                        <div class="modulettes">
+                                                            <a class="modulette download trackdl" download=""
+                                                                href="../images/devices/Roboto.zip" title="Roboto Font">
+                                                                <img alt="" class="icon download-icon"
+                                                                    src="../images/devices/download.svg" loading="lazy">
+                                                                <div class="info">
+                                                                    <span class="subtitle">粒子效果序列帧下载</span>
+                                                                    </br>
+                                                                    <span class="subtitle">240 KB (.zip) </span>
+                                                                </div>
+                                                                </img>
+                                                            </a>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 动效参数文档
+                    <div id="material-motion-implications-of-motion" class="article qp-ui"
+                        data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:4">
+                        <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }"
+                            data-qp-ui-data-id="qp:4">
+                            <strong>赛道模式动效参数文档</strong>
+                        </h2>
+                    </div>
+
+                    <div class=“motion-tab”>
+                        
+                        <div class="motion-media">
+                            <video preload="auto" loaded-data="" scrubbable="spec"
+                                ng-src="https://storage.cloud.google.com/non-spec-apps/mio-direct-embeds/videos/FADE%20THROUGH%20VARIANT.mp4"
+                                ng-if="spec.videoSrc" class="ng-scope" src="../images/Automobile/Basics.webm"></video>
+                        </div>
+                     
+                        <div class="motion-timeline">
+                            
+                        </div>
+
+                    </div> -->
+
+
+
+        </section>
+    </div>
+
+
+
+
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-L section-material-design color-spots">&nbsp;</div>
+            <div class="footer-grid-L section-material-design color-spots">
+                <a class="footer-text" href="yy_cross.html">
+                    <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+                    <span class="direction">上一页</span><span class="screen-reader">:</span>
+                    <div>越野模式</div>
+                </a>
+            </div>
+            <div class="footer-R section-what-is-material color-spots">&nbsp;</div>
+            <div class="footer-grid-R section-what-is-material color-spots">
+                <a class="footer-text" href="bt_light.html">
+                    <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+                    <span class="direction">下一页</span><span class="screen-reader">:</span>
+                    <div>白天模式</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

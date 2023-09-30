@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/mcss.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>GDC动效设计指南</title>
+
+
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../ZN_DesignGuide/css/normalize.min.css">
+  <link rel="stylesheet" href="../ZN_DesignGuide/css/swiper.min.css">
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+
+  <!-- javascript -->
+  <!-- javascript -->
+  <!-- javascript -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-88818678-1');
+  </script>
+  <script src="../js/majs.js"></script>
+  <script src="../js/page.js"></script>
+  <script src="../ZN_DesignGuide/js/pen.js"></script>
+  <script src="../ZN_DesignGuide/js/swiper.js"></script>
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+
+
+  <!-- 样式 -->
+  <!-- 样式 -->
+  <!-- 样式 -->
+
+  <style>
+    @import url(../css/mcss.css);
+    @import url(../css/fonts.css);
+    @import url(../css/style.css);
+    @import url(../ZN_DesignGuide/css/styyle.css);
+    @import url(../ZN_DesignGuide/css/normalize.css);
+    @import url(../ZN_DesignGuide/css/normalize.min.css);
+    @import url(../ZN_DesignGuide/css/swiper.min.css);
+  </style>
+</head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+  data-qp-ui="{ 'Mask': {} }">
+
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+    <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+      <div class="header-title">
+        <span class="section-title">动效设计指南</span>
+        <span class="chapter-title"><span class="title-separator">–</span> Motion Devices</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <nav>
+    <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+      <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+    </button>
+  </nav>
+
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+
+  <form id="search-form" action="https://cn.bing.com/search" method="GET">
+    <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+      <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+      <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+      <input name="q" type="text" id="search-input" autocomplete="off">
+      <label for="search-input">Search</label>
+    </div>
+  </form>
+
+
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+
+  <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+    <div class="side-nav-wrapper ">
+      <div>
+        <span id="logo">
+          <img src="../images/s.svg" width="185px" />
+        </span>
+
+        <nav>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">设计指南</dt>
+            <dd><a href="../ZN_DesignGuide/gs_introduction.html">概述</a><a
+                href="../ZN_DesignGuide/hj_environment.html">环境</a><a href="../ZN_DesignGuide/sx_attribute.html">属性</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+            <dd><a href="YZ_DynamicPrinciple/yz_principle.html">原则</a><a
+                href="YZ_DynamicPrinciple/qx_easing.html">动画曲线</a><a href="../motion/movement.html">移动</a><a
+                href="../motion/transforming-material.html">形变</a><a href="../motion/choreography.html">组合</a></dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+            <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+            <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                href="../components/bottom-sheets.html">底部卡片</a><a href="../components/buttons.html">按钮</a><a
+                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                href="../components/data-tables.html">数据表格</a><a href="../components/dialogs.html">对话框</a><a
+                href="../components/dividers.html">分隔线</a><a href="../components/expansion-panels.html">扩展面板</a><a
+                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                href="../components/lists-controls.html">列表控件</a><a href="../components/menus.html">菜单</a><a
+                href="../components/pickers.html">选择器</a><a href="../components/progress-activity.html">进度 & 活动状态</a><a
+                href="../components/selection-controls.html">选择控件</a><a href="../components/sliders.html">滑块</a><a
+                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                href="../components/steppers.html">步进器</a><a href="../components/subheaders.html">副标题</a><a
+                href="../components/tabs.html">Tab
+                选项卡</a><a href="../components/text-fields.html">文本框</a><a href="../components/toolbars.html">工具栏</a><a
+                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+            <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                href="../patterns/data-formats.html">AC</a><a href="../patterns/empty-states.html">DVR</a><a
+                href="../patterns/errors.html">FOTA</a><a href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                href="../patterns/loading-images.html">场景引擎</a><a href="../patterns/navigation.html">天气服务</a><a
+                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                href="../patterns/notifications.html">注册登陆</a><a href="../patterns/offline-states.html">消息中心</a><a
+                href="../patterns/permissions.html">系统设置</a><a href="../patterns/scrolling-techniques.html">能量管理</a><a
+                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                href="../patterns/settings.html">违章查询</a><a href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">仪表</dt>
+            <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                href="../growth-communications/onboarding.html">本地功能</a><a
+                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                href="../growth-communications/gesture-education.html">经典模式</a><a
+                href="../growth-communications/gesture-education.html">越野模式</a>
+              <a href="../YB_Automobile/sd_spots.html">赛道模式</a>
+              <a href="../YB_Automobile/bt_light.html">白天模式</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+            <dd><a href="../usability/accessibility.html">副屏</a><a href="../usability/accessibility.html">HUD</a>
+              <a href="../usability/accessibility.html">智能后视镜</a>
+              <a href="../usability/bidirectionality.html">车载语音助手</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+            <dd><a href="../platforms/platform-adaptation.html">KANZI</a><a href="../platforms/android.html">Android</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+            <dd><a href="devices/devices.html">动效设计资源</a><a href="../resources/layout-templates.html">动画术语</a>
+              <a href="../resources/roboto-noto-fonts.html">字体</a>
+              <a href="../resources/sticker-sheets-icons.html">插件 & 扩展</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">变更记录</dt>
+            <dd><a href="devices/devices.html">变更记录</a></dd>
+          </dl>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- 正文 -->
+  <!-- 正文 -->
+  <!-- 正文 -->
+
+  <div id="grid-cont">
+    <section class="grid_outer chapter">
+
+      <h1 class="chapter-title">概述</h1>
+
+
+      <div class="chapter-content">
+
+        <div class="article-content chapter-intro">
+          <div>
+            <figure class="s-tag-media">
+              <div class="media" style="max-width: 2320px">
+                <div class="frame " style="padding-top: 0%">
+
+
+
+                  <!-- 概况 -->
+                  <!-- 概况 -->
+                  <!-- 概况 -->
+
+
+
+                  <div translate="no">
+
+
+                    <div class="content">
+
+
+                      <div class="bg-shape">
+                        <img src="../images/DesignGuide/logo.png" alt="">
+                      </div>
+                      <div class="product-img">
+
+                        <div class="product-img__item" id="img1">
+                          <img src="../images/DesignGuide/item-5.png" alt="star wars" class="product-img__img">
+                        </div>
+
+                        <div class="product-img__item active" id="img2">
+                          <img src="../images/DesignGuide/item-2.png" alt="star wars" class="product-img__img">
+                        </div>
+
+                        <div class="product-img__item" id="img3">
+                          <img src="../images/DesignGuide/item-3.png" alt="star wars" class="product-img__img">
+                        </div>
+
+                        <div class="product-img__item" id="img4">
+                          <img src="../images/DesignGuide/item-1.png" alt="star wars" class="product-img__img">
+                        </div>
+
+
+                      </div>
+
+
+
+
+
+
+
+                      <div class="product-slider swiper-container-fade swiper-container-horizontal">
+                        <button class="prev" tabindex="0" role="button" aria-label="Previous slide"
+                          aria-disabled="false">
+                          <span class="icon">
+                            <svg class="icon icon-arrow-right">
+                              <use xlink:href="#icon-arrow-left"></use>
+                            </svg>
+                          </span>
+                        </button>
+                        <button class="next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false">
+                          <span class="icon">
+                            <svg class="icon icon-arrow-right">
+                              <use xlink:href="#icon-arrow-right"></use>
+                            </svg>
+                          </span>
+                        </button>
+
+                        <div class="product-slider__wrp swiper-wrapper" style="transition-duration: 0ms;">
+                          <div class="product-slider__item swiper-slide swiper-slide-prev" data-target="img4"
+                            style="width: 736px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="product-slider__card">
+                              <img src="../images/DesignGuide/item-4-bg.jpg" alt="star wars"
+                                class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h7 class="product-slider__title">
+                                  智能座舱 <br>
+                                  人机界面
+                                </h7>
+
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title"></div>
+                                  </div>
+                                </div>
+
+                                <div class="product-slider__bottom">
+                                  <button class="product-slider__cart">
+                                    查看详情
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-slider__item swiper-slide swiper-slide-active" data-target="img1"
+                            style="width: 736px; opacity: 1; transform: translate3d(-736px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="product-slider__card">
+                              <img src="../images/DesignGuide/item-1-bg.jpg" alt="star wars"
+                                class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h7 class="product-slider__title">
+                                  仪表
+                                </h7>
+
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">ENGINE UNIT</div>
+
+                                    <div class="product-labels__group">
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type1" checked="">
+                                        <span class="product-labels__txt">P-S4 TWIN</span>
+                                      </label>
+
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type1">
+                                        <span class="product-labels__txt">P-W401</span>
+                                      </label>
+                                    </div>
+
+                                  </div>
+
+                                  <span class="hr-vertical"></span>
+
+                                  <div class="product-inf">
+                                    <div class="product-inf__percent">
+                                      <div class="product-inf__percent-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                          viewBox="0 0 100 100">
+                                          <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                              <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0"></stop>
+                                              <stop offset="100%" stop-color="#cb2240" stop-opacity="1"></stop>
+                                            </linearGradient>
+                                          </defs>
+                                          <circle cx="50" cy="50" r="47" stroke-dasharray="225, 300" stroke="#457FF5"
+                                            stroke-width="4" fill="none"></circle>
+                                        </svg>
+                                      </div>
+                                      <div class="product-inf__percent-txt">
+                                        75%
+                                      </div>
+                                    </div>
+
+                                    <span class="product-inf__title">DURABILITY</span>
+                                  </div>
+
+                                </div>
+
+                                <div class="product-slider__bottom">
+                                  <button class="product-slider__cart">
+                                    查看详情
+                                  </button>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="product-slider__item swiper-slide swiper-slide-next" data-target="img2"
+                            style="width: 736px; opacity: 0; transform: translate3d(-1472px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="product-slider__card">
+                              <img src="../images/DesignGuide/item-2-bg.jpg" alt="star wars"
+                                class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h7 class="product-slider__title">
+                                  中控
+                                </h7>
+
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">VOLTAGE RANGE</div>
+
+                                    <div class="product-labels__group">
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type3" checked="">
+                                        <span class="product-labels__txt">2000 <sup>WATT</sup></span>
+                                      </label>
+
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type3">
+                                        <span class="product-labels__txt">2800 <sup>WATT</sup></span>
+                                      </label>
+                                    </div>
+
+
+
+                                  </div>
+
+
+
+
+
+                                </div>
+
+                                <div class="product-slider__bottom">
+                                  <button class="product-slider__cart">查看详情 </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="product-slider__item swiper-slide" data-target="img3"
+                            style="width: 736px; opacity: 0; transform: translate3d(-2208px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="product-slider__card">
+                              <img src="../images/DesignGuide/item-3-bg.jpg" alt="star wars"
+                                class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h7 class="product-slider__title">
+                                  副屏 <br>
+                                  及其他
+                                </h7>
+
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">HYPERDRIVE RATING</div>
+
+                                    <div class="product-labels__group">
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type6" checked="">
+                                        <span class="product-labels__txt">CLASS 4</span>
+                                      </label>
+
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type6">
+                                        <span class="product-labels__txt">CLASS 20</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="product-slider__bottom">
+                                  <button class="product-slider__cart">
+                                    查看详情
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      </div>
+
+                    </div>
+
+
+                    <svg class="hidden" hidden="">
+                      <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                        <path
+                          d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z">
+                        </path>
+                      </symbol>
+                      <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                        <path
+                          d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z">
+                        </path>
+                      </symbol>
+                    </svg>
+                    <script src="../ZN_DesignGuide/js/timeout.js"></script>
+                    <script src="../ZN_DesignGuide/js/jequery.min.js"></script>
+                    <script src="../ZN_DesignGuide/js/swiper.min.js"></script>
+                    <script src="../ZN_DesignGuide/js/rendered.js"></script>
+
+
+
+
+
+
+
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+            </figure>
+            <h1>汽车HMI界面相比于传统的手机UI界面，有着独特的应用场景。想要了解车机系统中动效的设计特点及原则，就需要明确车机HMI的使用场景，以及动效设计在不同应用场景下，所遵循的原则以及设计上的特点。</h1>
+
+          </div>
+        </div>
+
+
+        <nav class="chapter-toc">
+          <h1>目录</h1>
+          <ul>
+            <li>
+              <!-- 目录定位 -->
+              <!-- 目录定位 -->
+              <!-- 目录定位 -->
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="motion.html#introduction-goals" data-qp-ui-data-id="qp:1">场景</a>
+            </li>
+            <li>
+              <!-- 目录定位 -->
+              <!-- 目录定位 -->
+              <!-- 目录定位 -->
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="motion.html#introduction-principles" data-qp-ui-data-id="qp:2">特点</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="article-list">
+
+          <div id="introduction-goals" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:1">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+              场景
+            </h2>
+
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>车机系统的用户使用场景一般发生在车内，主要的状态是在驾驶中和静止时。相比于手机UI，用户在使用HMI时，更多的精力是放在驾驶中的。所以HMI设计时，要尽量减少对用户驾驶的干扰。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="frame " style="padding-top: 47.3684210526%">
+                            <img alt="" src="../images/DesignGuide/goals.jpg" loading="lazy" />
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>
+                        对于用户的指令，要更快速高效地完成。在完成用户各项操作指令的同时，通过界面设计和动效设计给用户传达一种良好的使用体验，提升品牌感和价值感。增加用户对车辆本身的价值认同，是HMI在用户体验过程中，所承担的使命。
+                      </p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="frame " style="padding-top: 47.3684210526%">
+                            <img alt=""
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/introduction/materialdesign_goals_system.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="introduction-principles" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:2">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:2">
+              特点
+            </h2>
+            <div class="module">
+              <p>车机HMI根据功能区域划分，可以分为仪表、中控、副屏和后排屏等。不同区域动效设计的特点也有所不同。下面分区域进行阐述：</p>
+            </div>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="figure-figure-figure col-3">
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt=""
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/introduction/materialdesign_principles_metaphor.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                      </figure>
+                      <h1>仪表</h1>
+                      <p>
+                        仪表的界面一般是一个有纵深感的三维空间，所以动效也不仅仅在一个平面上产生，而是在三维空间内进行变化，往往还会伴随着光影特效，从而带来更强的视觉冲击。而且仪表一般是不可点击的，动效往往伴随着用户的驾驶操作而产生。比如加速减速、驾驶模式切换、自适应巡航，方控操作等等。所以我们在设计仪表动效时与中控不同，驾驶信息变化突出显示更为重要。
+                      </p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt=""
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/introduction/materialdesign_principles_bold.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                      </figure>
+                      <h1>中控</h1>
+                      <p>
+                        中控台是用户进行操作的主要界面，有着复杂的功能设计。用户通过点击、滑动、拖拽等手势操作完成相应的功能操作。中控的动效设计，跟传统的手机UI动效设计在大体上保持相似，主要通过位置、缩放、不透明度、旋转等属性变化，可以结合缓动、遮罩、蒙层等设计手法给用户一种视觉上合理舒适的感受。
+                      </p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt=""
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/introduction/materialdesign_principles_motion.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                      </figure>
+                      <h1>副屏及后排屏幕</h1>
+                      <p>不是所有的车型都配有副屏以及后排屏，一般只有比较高端的车型才会有。这一部分的动效设计与中控屏大同小异。只要遵循一样的设计思路和原则就可以设计出合理的动效。</p>
+
+                    </div>
+                  </section>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gas-last-div-inner-bottom" style="margin-bottom: -100px">
+    </div>
+  </div>
+
+
+
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+      <div class="footer-grid-L section-material-design color-cyan">
+        <a class="footer-text" href="introduction.html">
+          <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+          <span class="direction">上一页</span><span class="screen-reader">:</span>
+          <div>概述</div>
+        </a>
+      </div>
+      <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+      <div class="footer-grid-R section-what-is-material color-cyan">
+        <a class="footer-text" href="environment.html">
+          <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+          <span class="direction">下一页</span><span class="screen-reader">:</span>
+          <div>环境</div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

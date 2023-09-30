@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/mcss.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>GDC动效设计指南</title>
+
+
+  <!-- javascript -->
+  <!-- javascript -->
+  <!-- javascript -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-88818678-1');
+  </script>
+  <script src="../js/majs.js"></script>
+  <script src="../js/page.js"></script>
+
+
+
+  <!-- 样式 -->
+  <!-- 样式 -->
+  <!-- 样式 -->
+
+  <style>
+    @import url(../css/mcss.css);
+    @import url(../css/style.css);
+    @import url(../css/fonts.css);
+  </style>
+</head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+  data-qp-ui="{ 'Mask': {} }">
+
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+    <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+      <div class="header-title">
+        <span class="section-title">动效指南-属性</span>
+        <span class="chapter-title"><span class="title-separator">–</span> Motion Devices</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <nav>
+    <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+      <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+    </button>
+  </nav>
+
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+
+  <form id="search-form" action="https://cn.bing.com/search" method="GET">
+    <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+      <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+      <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+      <input name="q" type="text" id="search-input" autocomplete="off">
+      <label for="search-input">Search</label>
+    </div>
+  </form>
+
+
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+
+  <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+    <div class="side-nav-wrapper ">
+      <div>
+        <span id="logo">
+          <img src="../images/s.svg" width="185px" />
+        </span>
+
+        <nav>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">设计指南</dt>
+            <dd><a href="../ZN_DesignGuide/gs_introduction.html">概述</a><a
+                href="../ZN_DesignGuide/hj_environment.html">环境</a><a href="../ZN_DesignGuide/sx_attribute.html">属性</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+            <dd><a href="YZ_DynamicPrinciple/yz_principle.html">原则</a><a
+                href="YZ_DynamicPrinciple/qx_easing.html">动画曲线</a><a href="../motion/movement.html">移动</a><a
+                href="../motion/transforming-material.html">形变</a><a href="../motion/choreography.html">组合</a></dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+            <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+            <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                href="../components/bottom-sheets.html">底部卡片</a><a href="../components/buttons.html">按钮</a><a
+                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                href="../components/data-tables.html">数据表格</a><a href="../components/dialogs.html">对话框</a><a
+                href="../components/dividers.html">分隔线</a><a href="../components/expansion-panels.html">扩展面板</a><a
+                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                href="../components/lists-controls.html">列表控件</a><a href="../components/menus.html">菜单</a><a
+                href="../components/pickers.html">选择器</a><a href="../components/progress-activity.html">进度 & 活动状态</a><a
+                href="../components/selection-controls.html">选择控件</a><a href="../components/sliders.html">滑块</a><a
+                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                href="../components/steppers.html">步进器</a><a href="../components/subheaders.html">副标题</a><a
+                href="../components/tabs.html">Tab
+                选项卡</a><a href="../components/text-fields.html">文本框</a><a href="../components/toolbars.html">工具栏</a><a
+                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+            <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                href="../patterns/data-formats.html">AC</a><a href="../patterns/empty-states.html">DVR</a><a
+                href="../patterns/errors.html">FOTA</a><a href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                href="../patterns/loading-images.html">场景引擎</a><a href="../patterns/navigation.html">天气服务</a><a
+                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                href="../patterns/notifications.html">注册登陆</a><a href="../patterns/offline-states.html">消息中心</a><a
+                href="../patterns/permissions.html">系统设置</a><a href="../patterns/scrolling-techniques.html">能量管理</a><a
+                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                href="../patterns/settings.html">违章查询</a><a href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">仪表</dt>
+            <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                href="../growth-communications/onboarding.html">本地功能</a><a
+                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                href="../growth-communications/gesture-education.html">经典模式</a><a
+                href="../growth-communications/gesture-education.html">越野模式</a>
+              <a href="../YB_Automobile/sd_spots.html">赛道模式</a>
+              <a href="../YB_Automobile/bt_light.html">白天模式</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+            <dd><a href="../usability/accessibility.html">副屏</a><a href="../usability/accessibility.html">HUD</a>
+              <a href="../usability/accessibility.html">智能后视镜</a>
+              <a href="../usability/bidirectionality.html">车载语音助手</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+            <dd><a href="../platforms/platform-adaptation.html">KANZI</a><a href="../platforms/android.html">Android</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+            <dd><a href="devices/devices.html">动效设计资源</a><a href="../resources/layout-templates.html">动画术语</a>
+              <a href="../resources/roboto-noto-fonts.html">字体</a>
+              <a href="../resources/sticker-sheets-icons.html">插件 & 扩展</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">变更记录</dt>
+            <dd><a href="devices/devices.html">变更记录</a></dd>
+          </dl>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- 正文 -->
+  <!-- 正文 -->
+  <!-- 正文 -->
+
+  <div id="grid-cont">
+    <section class="grid_outer chapter">
+
+      <h1 class="chapter-title">属性</h1>
+
+
+      <div class="chapter-content">
+
+        <div class="article-content chapter-intro">
+          <div>
+            <h1>动效设计的关键是保证物体运动的物理感，同时不牺牲物体运动的优雅感、简约感、美感，让物体的运动充满魔力，打造无缝式的用户体验。</h1>
+            <ins class="adsbygoogle adsbygoogle_intro_h1_bottom" style="display:block"
+              data-ad-client="ca-pub-4466345895756968" data-ad-slot="3341290206" data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="col-list">
+              <section class="module-module-figure col-3 h3-spacing">
+                <div class="module">
+                  <p>物体自身有一些固定的特性和行为。</p>
+                </div>
+                <div class="module">
+                  <h3>特性</h3>
+                  <p>固体的<br>
+                    拥有固体的一般物理特性<br>
+                    同时拥有液体的一些特性<br>
+                    不可穿透<br>
+                    形状可变<br>
+                    拥有现实中的厚度/惯性和反馈<br>
+                    层叠/合并/分离<br>
+                    可以在任何轴上移动</p>
+                </div>
+                <div class="figure">
+                  <figure class="s-tag-media">
+                    <div class="media" style="max-width: 3000px">
+                      <div class="frame " style="padding-top: 100.0%">
+                        <img alt=""
+                          src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/what_is_material_material_properties.png"
+                          loading="lazy" />
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <nav class="chapter-toc">
+          <h1>目录</h1>
+          <ul>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="../material-design/material-properties.html#material-properties-physical-properties"
+                data-qp-ui-data-id="qp:1">物理属性</a>
+            </li>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="../material-design/material-properties.html#material-properties-transforming-material"
+                data-qp-ui-data-id="qp:2">材料的转换</a>
+            </li>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="../material-design/material-properties.html#material-properties-movement-of-material"
+                data-qp-ui-data-id="qp:3">材料的移动</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="article-list">
+
+          <div id="material-properties-physical-properties" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:1">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+              物理属性
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-4466345895756968"
+              data-ad-slot="4427540076" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure-figure col-3">
+                    <div class="module">
+                      <p>材料在 <strong>x、y 轴上有不同的尺寸</strong>（计量单位为 dp）和<strong>统一的厚度</strong>（1dp）。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt="" aria-describedby="physical-properties-figure-caption-0"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_materialproperties_physicalproperties_thickness_01_yes.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-0">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>材料的长度和宽度是可以改变的。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt="" aria-describedby="physical-properties-figure-caption-1"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_materialproperties_physicalproperties_thickness_02_no.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-1">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>所有材料都是 1dp 的厚度。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料会投射出阴影。</p>
+                      <p>阴影是由于元素之间的相对高度（Z 轴）而自然产生的。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="physical-properties-figure-caption-2" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/inline whatismaterial-materialprop-physicalprop-PaperShadow_01_xhdpi_008.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/inline whatismaterial-materialprop-physicalprop-PaperShadow_01_xhdpi_008.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-2">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>阴影反映了材料的元素之间的相对高度。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2">
+                    <div class="module"></div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="physical-properties-figure-caption-3" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/inline whatismaterial-materialprop-physicalprop-PaperShadow_02_xhdpi_008.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/inline whatismaterial-materialprop-physicalprop-PaperShadow_02_xhdpi_008.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-3">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>阴影不是通过对材料着色产生的。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>内容可以以任何形状和颜色显示在材料上。内容不会增加材料的厚度。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="physical-properties-figure-caption-4" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-physicalprop-InkDisplay_xhdpi_006.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-physicalprop-InkDisplay_xhdpi_006.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-4">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>材料可以展示任何形状和颜色。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>内容看起来可以独立于材料，但是会被限制在材料的边界内。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="physical-properties-figure-caption-5" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-physicalprop-InkBehavior_xhdpi_006.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-physicalprop-InkBehavior_xhdpi_006.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-5">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>内容的行为可以和材料的行为互相独立。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure-figure col-3">
+                    <div class="module">
+                      <p>材料是固态的。</p>
+                      <p>输入事件不能穿透材料。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt="" aria-describedby="physical-properties-figure-caption-6"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_properties_physical3.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-6">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>只有在最前面的材料才会响应输入事件。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt="" aria-describedby="physical-properties-figure-caption-7"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_properties_physical4.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-7">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>输入事件不能穿透材料。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure-figure col-3">
+                    <div class="module">
+                      <p>多个材料元素不能同时出现在同一空间中的相同位置。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt="" aria-describedby="physical-properties-figure-caption-8"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_properties_physical5.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-8">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>利用高度来区分材料元素，以防止多个材料元素同时占用空间中的相同位置。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame " style="padding-top: 100.0%">
+                            <img alt="" aria-describedby="physical-properties-figure-caption-9"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_properties_physical6.png"
+                              loading="lazy" />
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-9">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>多个材料元素不能同时占用空间中的相同位置。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料之间不能相互交叉。</p>
+                      <p>例如，当改变材料高度时，这片材料不能从另一片材料中穿过。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="physical-properties-figure-caption-10" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_properties_physical_07_xhdpi_009.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial_properties_physical_07_xhdpi_009.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="physical-properties-figure-caption-10">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>材料之间不能相互交叉。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="material-properties-transforming-material" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:2">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:2">
+              材料的转换
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-4466345895756968"
+              data-ad-slot="4427540076" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料可以改变形状。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="transforming-material-figure-caption-0" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperShape_xhdpi_005.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperShape_xhdpi_005.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="transforming-material-figure-caption-0">
+                          <p>材料可以改变形状。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料只能在当前所在平面内伸缩。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 47.3684210526%">
+                            <video aria-describedby="transforming-material-figure-caption-1" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperShapeLinear_xhdpi_005.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperShapeLinear_xhdpi_005.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="transforming-material-figure-caption-1">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>材料只能在当前所在平面内伸缩。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料不能弯曲或折叠。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 63.1578947368%">
+                            <video aria-describedby="transforming-material-figure-caption-2" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperBendFold_xhdpi_006.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperBendFold_xhdpi_006.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="transforming-material-figure-caption-2">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>材料不能弯曲或折叠。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>多片材料可以组合成一片材料。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 63.1578947368%">
+                            <video aria-describedby="transforming-material-figure-caption-3" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperHeal_xhdpi_004.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperHeal_xhdpi_004.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="transforming-material-figure-caption-3">
+                          <p>多片材料可以组合成一片材料。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>分割之后，材料可以复原。例如，如果你从一片材料中移动了其中一部分，这部分材料会重新回到那片材料中，恢复成一整片材料。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 63.1578947368%">
+                            <video aria-describedby="transforming-material-figure-caption-4" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperSplitHeal_xhdpi_005.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-transformingmaterial-PaperSplitHeal_xhdpi_005.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="transforming-material-figure-caption-4">
+                          <p>材料可以被分割和复原。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="material-properties-movement-of-material" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:3">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:3">
+              材料的移动
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <ins class="adsbygoogle" style="display:block;margin-bottom:30px;" data-ad-client="ca-pub-4466345895756968"
+              data-ad-slot="4427540076" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料可以在环境中的任何地方自动创建或销毁。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 63.1578947368%">
+                            <video aria-describedby="movement-of-material-figure-caption-0" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-movementmaterial-PaperPointExpand_xhdpi_005.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-movementmaterial-PaperPointExpand_xhdpi_005.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="movement-of-material-figure-caption-0">
+                          <p>材料可以自动创建或销毁。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>材料可以沿着任何轴移动。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 63.1578947368%">
+                            <video aria-describedby="movement-of-material-figure-caption-1" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-movementmaterial-PaperMove_xhdpi_008.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-movementmaterial-PaperMove_xhdpi_008.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="movement-of-material-figure-caption-1">
+                          <p>材料可以沿着任何轴移动。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>Z 轴的运动通常是用户和材料交互的结果。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video aria-describedby="movement-of-material-figure-caption-2" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-movementmaterial-Material_Response_xhdpi_003.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/material-properties/whatismaterial-materialprop-movementmaterial-Material_Response_xhdpi_003.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="movement-of-material-figure-caption-2">
+                          <p>Z 轴的运动是用户和材料交互后产生的。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gas-last-div-inner-bottom" style="margin-bottom: -100px">
+      <ins class="adsbygoogle adsbygoogle_last_div_inner_bottom" style="display:block"
+        data-ad-client="ca-pub-4466345895756968" data-ad-slot="9945643291" data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+
+
+
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+      <div class="footer-grid-L section-material-design color-cyan">
+        <a class="footer-text" href="introduction.html">
+          <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+          <span class="direction">上一页</span><span class="screen-reader">:</span>
+          <div>概述</div>
+        </a>
+      </div>
+      <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+      <div class="footer-grid-R section-what-is-material color-cyan">
+        <a class="footer-text" href="environment.html">
+          <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+          <span class="direction">下一页</span><span class="screen-reader">:</span>
+          <div>环境</div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

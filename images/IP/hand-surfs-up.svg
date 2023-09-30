@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="38px" viewBox="0 0 48 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hand-surfs-up</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hand-surfs-up" fill="#9FBFFF" fill-rule="nonzero">
+            <ellipse id="椭圆形" transform="translate(21.806600, 23.668400) rotate(30.706100) translate(-21.806600, -23.668400) " cx="21.8066" cy="23.6684" rx="10.4143" ry="9.80828"></ellipse>
+            <rect id="矩形" transform="translate(10.424875, 15.284575) rotate(-27.092000) translate(-10.424875, -15.284575) " x="6.42487486" y="0.219975463" width="8" height="30.1292" rx="4"></rect>
+            <rect id="矩形" transform="translate(28.689903, 17.757347) rotate(-27.092000) translate(-28.689903, -17.757347) " x="24.6899033" y="7.22159718" width="8" height="21.0715" rx="4"></rect>
+            <rect id="矩形" transform="translate(34.439776, 22.137290) rotate(50.212900) translate(-34.439776, -22.137290) " x="30.4397756" y="8.16594019" width="8" height="27.9427" rx="4"></rect>
+            <rect id="矩形" transform="translate(21.843131, 20.057025) rotate(-27.092000) translate(-21.843131, -20.057025) " x="17.8431314" y="9.85782466" width="8" height="20.3984" rx="4"></rect>
+        </g>
+    </g>
+</svg>

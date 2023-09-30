@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="43px" viewBox="0 0 48 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hand</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hand" fill="#9FBFFF" fill-rule="nonzero">
+            <circle id="椭圆形" cx="24.694" cy="30" r="13"></circle>
+            <rect id="矩形" transform="translate(12.214533, 30.951325) rotate(-56.502700) translate(-12.214533, -30.951325) " x="8.21453272" y="18.9513249" width="8" height="24" rx="4"></rect>
+            <rect id="矩形" transform="translate(22.995536, 12.644098) rotate(-16.821500) translate(-22.995536, -12.644098) " x="18.995536" y="0.644097639" width="8" height="24" rx="4"></rect>
+            <rect id="矩形" transform="translate(12.971532, 18.349376) rotate(-44.636200) translate(-12.971532, -18.349376) " x="8.97153244" y="6.34937622" width="8" height="24" rx="4"></rect>
+            <rect id="矩形" transform="translate(38.158102, 25.392305) rotate(30.000000) translate(-38.158102, -25.392305) " x="34.1581016" y="13.3923048" width="8" height="24" rx="4"></rect>
+        </g>
+    </g>
+</svg>

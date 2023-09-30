@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/mcss.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>GDC动效设计指南</title>
+
+
+  <!-- javascript -->
+  <!-- javascript -->
+  <!-- javascript -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-88818678-1');
+  </script>
+  <script src="../js/majs.js"></script>
+  <script src="../js/page.js"></script>
+
+
+
+  <!-- 样式 -->
+  <!-- 样式 -->
+  <!-- 样式 -->
+
+  <style>
+    @import url(../css/mcss.css);
+    @import url(../css/style.css);
+    @import url(../css/fonts.css);
+    @import url(../ZN_DesignGuide/css/elevation.css);
+  </style>
+</head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+  data-qp-ui="{ 'Mask': {} }">
+
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+    <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+      <div class="header-title">
+        <span class="section-title">动效指南-物理环境</span>
+        <span class="chapter-title"><span class="title-separator">–</span> Motion Devices</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <nav>
+    <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+      <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+    </button>
+  </nav>
+
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+
+  <form id="search-form" action="https://cn.bing.com/search" method="GET">
+    <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+      <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+      <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+      <input name="q" type="text" id="search-input" autocomplete="off">
+      <label for="search-input">Search</label>
+    </div>
+  </form>
+
+
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+
+  <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+    <div class="side-nav-wrapper ">
+      <div>
+        <span id="logo">
+          <img src="../images/s.svg" width="185px" />
+        </span>
+
+        <nav>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">设计指南</dt>
+            <dd><a href="../ZN_DesignGuide/gs_introduction.html">概述</a><a
+                href="../ZN_DesignGuide/hj_environment.html">环境</a><a href="../ZN_DesignGuide/sx_attribute.html">属性</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+            <dd><a href="YZ_DynamicPrinciple/yz_principle.html">原则</a><a
+                href="YZ_DynamicPrinciple/qx_easing.html">动画曲线</a><a href="../motion/movement.html">移动</a><a
+                href="../motion/transforming-material.html">形变</a><a href="../motion/choreography.html">组合</a></dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+            <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a></dd>
+          </dl>
+
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+            <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                href="../components/bottom-sheets.html">底部卡片</a><a href="../components/buttons.html">按钮</a><a
+                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                href="../components/data-tables.html">数据表格</a><a href="../components/dialogs.html">对话框</a><a
+                href="../components/dividers.html">分隔线</a><a href="../components/expansion-panels.html">扩展面板</a><a
+                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                href="../components/lists-controls.html">列表控件</a><a href="../components/menus.html">菜单</a><a
+                href="../components/pickers.html">选择器</a><a href="../components/progress-activity.html">进度 & 活动状态</a><a
+                href="../components/selection-controls.html">选择控件</a><a href="../components/sliders.html">滑块</a><a
+                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                href="../components/steppers.html">步进器</a><a href="../components/subheaders.html">副标题</a><a
+                href="../components/tabs.html">Tab
+                选项卡</a><a href="../components/text-fields.html">文本框</a><a href="../components/toolbars.html">工具栏</a><a
+                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+            <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                href="../patterns/data-formats.html">AC</a><a href="../patterns/empty-states.html">DVR</a><a
+                href="../patterns/errors.html">FOTA</a><a href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                href="../patterns/loading-images.html">场景引擎</a><a href="../patterns/navigation.html">天气服务</a><a
+                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                href="../patterns/notifications.html">注册登陆</a><a href="../patterns/offline-states.html">消息中心</a><a
+                href="../patterns/permissions.html">系统设置</a><a href="../patterns/scrolling-techniques.html">能量管理</a><a
+                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                href="../patterns/settings.html">违章查询</a><a href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">仪表</dt>
+            <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                href="../growth-communications/onboarding.html">本地功能</a><a
+                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                href="../growth-communications/gesture-education.html">经典模式</a><a
+                href="../growth-communications/gesture-education.html">越野模式</a>
+              <a href="../YB_Automobile/sd_spots.html">赛道模式</a>
+              <a href="../YB_Automobile/bt_light.html">白天模式</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+            <dd><a href="../usability/accessibility.html">副屏</a><a href="../usability/accessibility.html">HUD</a>
+              <a href="../usability/accessibility.html">智能后视镜</a>
+              <a href="../usability/bidirectionality.html">车载语音助手</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+            <dd><a href="../platforms/platform-adaptation.html">KANZI</a><a href="../platforms/android.html">Android</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+            <dd><a href="devices/devices.html">动效设计资源</a><a href="../resources/layout-templates.html">动画术语</a>
+              <a href="../resources/roboto-noto-fonts.html">字体</a>
+              <a href="../resources/sticker-sheets-icons.html">插件 & 扩展</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">变更记录</dt>
+            <dd><a href="devices/devices.html">变更记录</a></dd>
+          </dl>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- 正文 -->
+  <!-- 正文 -->
+  <!-- 正文 -->
+
+  <div id="grid-cont">
+    <section class="grid_outer chapter">
+
+      <h1 class="chapter-title">物理环境</h1>
+
+
+      <div class="chapter-content">
+
+        <div class="article-content chapter-intro">
+          <div>
+            <h1>界面(仪表/中控/其他)是一个有纵深感的三维空间，处于空间内的任何物理形体具有质量，当受到外力驱使时能够运动。</h1>
+            <style>
+              .adsbygoogle_intro_h1_bottom {
+                width: 100%;
+                height: 100px;
+                margin-bottom: 20px;
+              }
+            </style>
+            <ins class="adsbygoogle adsbygoogle_intro_h1_bottom" style="display:block"
+              data-ad-client="ca-pub-4466345895756968" data-ad-slot="3341290206"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <div class="col-list">
+              <section class="module-module-figure col-3 h3-spacing">
+                <div class="module">
+                  <p>首先，需要充分理解物质是有形的，继而才能从容处理物体的运动。观察物体的运动，我们可以估量出物体的轻重、灵活性、大小尺寸。</p>
+                  <p>所有的元素对象都包含 x、y、z 三个维度。</p>
+                  <p>所有的元素对象都有一个 Z 轴厚度。</p>
+
+                </div>
+                <div class="module">
+                  <h3>厚度</h3>
+                  <p>基础为:1dp</p>
+                  <h3>阴影</h3>
+                  <p>不同高度的对象相互叠加所产生的</p>
+                </div>
+                <div class="figure">
+                  <figure class="s-tag-media">
+                    <div class="media" style="max-width: 3000px">
+                      <div class="frame ">
+                        <div class="demo">
+                          <div class="floor isometric">
+                            <div class="appBar">
+                            </div>
+                            <div class="content">
+                              <!-- <div class="card"></div> -->
+                              <div class="card_01"></div>
+                            </div>
+                            <!-- <div class="fab dialogOpener toasted"></div> -->
+                            <!-- <div class="button dialogOpener"></div> -->
+                            <div class="dialogContainer hidden" id="dialog">
+                              <div class="dialog"></div>
+                            </div>
+                            <div class="drawerContainer hidden" id="drawer">
+                              <div class="drawer">
+                                <div class="header"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <script id="rendered-js">
+                            var dialogOpener = $('.dialogOpener');
+                            var dialog = $('#dialog');
+                            var drawerOpener = $('#drawerOpener');
+                            var drawer = $('#drawer');
+
+                            dialogOpener.on('click', function () {
+                              dialog.removeClass('hidden');
+                            });
+
+                            dialog.on('click', function () {
+                              dialog.addClass('hidden');
+                            });
+
+                            drawerOpener.on('click', function () {
+                              drawer.toggleClass('hidden');
+                            });
+
+                            drawer.on('click', function () {
+                              drawer.addClass('hidden');
+                            });
+                        //# sourceURL=pen.js
+                          </script>
+                        </div>
+                        <!-- <img alt=""
+                          src="../images/DesignGuide/hj/hj_environment_01.png"
+                          loading="lazy" /> -->
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <nav class="chapter-toc">
+          <h1>目录</h1>
+          <ul>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="environment.html#environment-3d-world" data-qp-ui-data-id="qp:1">中控</a>
+            </li>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="environment.html#environment-light-shadow" data-qp-ui-data-id="qp:2">仪表</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="article-list">
+
+          <div id="environment-3d-world" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:1">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+              中控
+            </h2>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>中控是用户操作的主要界面，集成复杂的功能设计。用户通过点击、滑动、拖拽
+                        等手势操作完成相应功能任务，避免元素间因为运动产生碰撞、挤压、弹性等复杂物理特性。因此在中控端强调层级，所有元素高度为一个基础厚度<a>1dp</a>。
+                      </p>
+                      <p>然后元素通过阴影海拔的概念，这些就体现出了3D的感觉。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="frame">
+
+
+                            <div class="demo_01">
+                              <div class="floor_01 isometric">
+                                <div class="appBar_01">
+                                </div>
+                                <div class="content">
+                                  <div class="card"></div>
+                                  <div class="card"></div>
+                                </div>
+                                <div class="fab dialogOpener toasted"></div>
+                                <div class="button dialogOpener"></div>
+                                <div class="dialogContainer hidden" id="dialog">
+                                  <div class="dialog"></div>
+                                </div>
+                                <div class="drawerContainer hidden" id="drawer">
+                                  <div class="drawer">
+                                    <div class="header"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <script id="rendered-js">
+                                var dialogOpener = $('.dialogOpener');
+                                var dialog = $('#dialog');
+                                var drawerOpener = $('#drawerOpener');
+                                var drawer = $('#drawer');
+
+                                dialogOpener.on('click', function () {
+                                  dialog.removeClass('hidden');
+                                });
+
+                                dialog.on('click', function () {
+                                  dialog.addClass('hidden');
+                                });
+
+                                drawerOpener.on('click', function () {
+                                  drawer.toggleClass('hidden');
+                                });
+
+                                drawer.on('click', function () {
+                                  drawer.addClass('hidden');
+                                });
+                            //# sourceURL=pen.js
+                              </script>
+                            </div>
+
+
+
+
+
+
+                            <!-- <img alt="" aria-describedby="3d-world-figure-caption-0"
+                              src="//cdn.w3cbus.com/mdui.org/design/static/media/material-design/environment/whatismaterial_environment_3d.png"
+                              loading="lazy" /> -->
+                          </div>
+                        </div>
+                        <figcaption id="3d-world-figure-caption-0">
+                          <p>具有 x、y、z 轴的 3D 空间</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="environment-light-shadow" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:2">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:2">
+              仪表
+            </h2>
+            <div class="article-content">
+              <div>
+                <p>相比中控，仪表端的动效设计有着很大的不同。</p>
+                <p>仪表的界面往往伴随着驾驶产生变化，驾驶信息的变化突出显得格外重要，所以仪表更强调空间，动效不仅仅是在一个
+                  平面产生，而是在三维空间内变化，伴随着光影特效强化视觉冲击，所以仪表端的元素有厚度的概念，可以理解成多个基础厚度元素叠加。</p>
+                <div class="col-list">
+                  <section class="figure-figure-figure col-3">
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame ">
+
+                            <div class="demo">
+                              <div class="box">
+                                <div class="content1">
+                                  <div class="front"></div>
+                                  <div class="back"></div>
+                                  <div class="left"></div>
+                                  <div class="right"></div>
+                                  <div class="top"></div>
+                                  <div class="bottom"></div>
+                                </div>
+                                <div class="box-small -dull-color"></div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <figcaption id="light-shadow-figure-caption-0">
+                          <p>基础层
+                            </br>可以理解是3D场景中的未加灯光和材质前的对象
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame ">
+                            <div class="demo">
+                              <div class="box">
+                                <div class="content2">
+
+                                  <div class="front1"></div>
+                                  <div class="back1"></div>
+                                  <div class="left1"></div>
+                                  <div class="right1"></div>
+                                  <div class="top1"></div>
+                                  <div class="bottom1"></div>
+                                </div>
+                                <div class="box-small -dull-color1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <figcaption id="light-shadow-figure-caption-1">
+                          <p>光影层
+                            </br>可以理解为在3D场景中,赋予对象光照和材质
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="frame ">
+                            <div class="demo">
+                              <div class="box">
+                                <div class="content2">
+
+                                  <div class="front1">
+                                    <div class="front-circle"></div>
+                                  </div>
+                                  <div class="back1"></div>
+                                  <div class="left1"></div>
+                                  <div class="right1"></div>
+                                  <div class="top1"></div>
+                                  <div class="bottom1"></div>
+                                </div>
+                                <div class="box-small -dull-color1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <figcaption id="light-shadow-figure-caption-2">
+                          <p>装饰层
+                            </br>可以理解为粒子/光源等等装饰元素
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+      <div class="footer-grid-L section-material-design color-cyan">
+        <a class="footer-text" href="introduction.html">
+          <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+          <span class="direction">上一页</span><span class="screen-reader">:</span>
+          <div>概述</div>
+        </a>
+      </div>
+      <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+      <div class="footer-grid-R section-what-is-material color-cyan">
+        <a class="footer-text" href="environment.html">
+          <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+          <span class="direction">下一页</span><span class="screen-reader">:</span>
+          <div>环境</div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

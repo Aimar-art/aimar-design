@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="39px" viewBox="0 0 33 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hand-waiting</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hand-waiting" transform="translate(3.000000, 4.000000)">
+            <circle id="椭圆形" fill="#9FBFFF" fill-rule="nonzero" cx="16.694" cy="22" r="13"></circle>
+            <rect id="矩形" fill="#9FBFFF" fill-rule="nonzero" transform="translate(24.905945, 19.270743) rotate(4.385700) translate(-24.905945, -19.270743) " x="20.9059453" y="7.27074314" width="8" height="24" rx="4"></rect>
+            <path d="M15.0815,0.24521 C17.9538,4.2173 21.3814,13.4427 12.1131,18.567" id="路径" stroke="#9FBFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M0.84553,13.7457 C5.7451,13.8945 15.1449,16.8095 13.5479,27.279" id="路径" stroke="#9FBFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M5.7668,5.4789 C9.7851,8.2863 16.0543,15.8726 8.9851,23.7584" id="路径" stroke="#9FBFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/mcss.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>GDC动效设计指南</title>
+
+
+  <!-- javascript -->
+  <!-- javascript -->
+  <!-- javascript -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-88818678-1');
+  </script>
+  <script src="../js/majs.js"></script>
+  <script src="../js/page.js"></script>
+  <script src="../js/index.js"></script>
+
+
+
+
+  <!-- 样式 -->
+  <!-- 样式 -->
+  <!-- 样式 -->
+
+  <style>
+    @import url(../css/mcss.css);
+    @import url(../css/style.css);
+    @import url(../css/index.css);
+  </style>
+</head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+  data-qp-ui="{ 'Mask': {} }">
+
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+    <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+      <div class="header-title">
+        <span class="section-title">动效原则-缓动曲线</span>
+        <span class="chapter-title"><span class="title-separator">–</span> Motion Devices</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <nav>
+    <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+      <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+    </button>
+  </nav>
+
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+
+  <form id="search-form" action="https://cn.bing.com/search" method="GET">
+    <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+      <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+      <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+      <input name="q" type="text" id="search-input" autocomplete="off">
+      <label for="search-input">Search</label>
+    </div>
+  </form>
+
+
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+
+  <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+    <div class="side-nav-wrapper ">
+      <div>
+        <span id="logo">
+          <img src="../images/s.svg" width="185px" />
+        </span>
+
+        <nav>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">设计指南</dt>
+            <dd><a class="nav_selected" href="introduction.html">概述</a><a href="environment.html">环境</a><a
+                href="material-properties.html">属性</a><a href="elevation-shadows.html">层次 & 阴影</a><a
+                href="whats-new.html">最近更新</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+            <dd><a href="../motion/material-motion.html">原则</a><a href="../motion/duration-easing.html">时长 &
+                缓动</a><a href="../motion/movement.html">变化</a><a href="../motion/transforming-material.html">组合</a><a
+                href="../motion/choreography.html">过渡</a><a href="../motion/creative-customization.html">自定义动画</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+            <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a><a
+                href="../style/writing.html">书写</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">布局</dt>
+            <dd><a href="../layout/principles.html">原则</a><a href="../layout/units-measurements.html">单位 &
+                度量</a><a href="../layout/metrics-keylines.html">度量标准 & 关键线</a><a
+                href="../layout/structure.html">结构</a><a href="../layout/responsive-ui.html">响应式
+                UI</a><a href="../layout/split-screen.html">分屏</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+            <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                href="../components/bottom-sheets.html">底部卡片</a><a href="../components/buttons.html">按钮</a><a
+                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                href="../components/data-tables.html">数据表格</a><a href="../components/dialogs.html">对话框</a><a
+                href="../components/dividers.html">分隔线</a><a href="../components/expansion-panels.html">扩展面板</a><a
+                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                href="../components/lists-controls.html">列表控件</a><a href="../components/menus.html">菜单</a><a
+                href="../components/pickers.html">选择器</a><a href="../components/progress-activity.html">进度 & 活动状态</a><a
+                href="../components/selection-controls.html">选择控件</a><a href="../components/sliders.html">滑块</a><a
+                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                href="../components/steppers.html">步进器</a><a href="../components/subheaders.html">副标题</a><a
+                href="../components/tabs.html">Tab
+                选项卡</a><a href="../components/text-fields.html">文本框</a><a href="../components/toolbars.html">工具栏</a><a
+                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+            <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                href="../patterns/data-formats.html">AC</a><a href="../patterns/empty-states.html">DVR</a><a
+                href="../patterns/errors.html">FOTA</a><a href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                href="../patterns/loading-images.html">场景引擎</a><a href="../patterns/navigation.html">天气服务</a><a
+                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                href="../patterns/notifications.html">注册登陆</a><a href="../patterns/offline-states.html">消息中心</a><a
+                href="../patterns/permissions.html">系统设置</a><a href="../patterns/scrolling-techniques.html">能量管理</a><a
+                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                href="../patterns/settings.html">违章查询</a><a href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">仪表</dt>
+            <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                href="../growth-communications/onboarding.html">本地功能</a><a
+                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                href="../growth-communications/gesture-education.html">经典模式</a><a
+                href="../growth-communications/gesture-education.html">越野模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+            <dd><a href="../usability/accessibility.html">副屏</a><a href="../usability/accessibility.html">HUD</a>
+              <a href="../usability/accessibility.html">智能后视镜</a>
+              <a href="../usability/bidirectionality.html">车载语音助手</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+            <dd><a href="../platforms/platform-adaptation.html">平台适配</a><a href="../platforms/android.html">Android</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+            <dd><a href="devices/devices.html">动效设计资源</a><a href="../resources/layout-templates.html">动画术语</a><a
+                href="../resources/roboto-noto-fonts.html">字体</a><a href="../resources/sticker-sheets-icons.html">贴片 &
+                图标</a><a href="../resources/shadows.html">阴影</a> </dd>
+          </dl>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- 正文 -->
+  <!-- 正文 -->
+  <!-- 正文 -->
+
+  <div id="grid-cont">
+    <section class="grid_outer chapter">
+
+      <h1 class="chapter-title">缓动 & 曲线</h1>
+
+
+      <div class="chapter-content">
+
+        <div class="article-content chapter-intro">
+          <div>
+            <style>
+              .adsbygoogle_intro_h1_bottom {
+                width: 100%;
+                height: 100px;
+                margin-bottom: 20px;
+              }
+            </style>
+
+            <div class="col-list">
+              <section class="module-module-figure col-3 h3-spacing">
+                <div class="module">
+                  <p>现实生活中，物体并不是突然启动或者停止，当然也不可能一直保持匀速移动。就像我们打开抽屉的过程那样，刚开始拉的那一下动作很快，但是当抽屉被拉出来之后我们会不自觉的放慢动作。掉落在地板上的东西，一开始下降的速度很快，后来就会在地板上来回反弹直到停止。</p>
+                </div>
+                <div class="module">
+                  <h3>缓动曲线</h3>
+                  <p>标准曲线<br>
+                    减速曲线<br>
+                    加速曲线<br>
+                    夏普曲线</p>
+                </div>
+                <div class="figure">
+                  <figure class="s-tag-media">
+                    <div class="media" style="max-width: 720px">
+                      <div class="frame " style="padding-top: 100.0%">
+                        <img alt=""
+                          src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/01-duration-and-easing.png"
+                          loading="lazy" />
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <nav class="chapter-toc">
+          <h1>目录</h1>
+          <ul>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="duration-easing.html#duration-easing-speed" data-qp-ui-data-id="qp:1">速度</a>
+            </li>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="duration-easing.html#duration-easing-dynamic-durations" data-qp-ui-data-id="qp:2">动态时长</a>
+            </li>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="duration-easing.html#duration-easing-common-durations" data-qp-ui-data-id="qp:3">常用时长</a>
+            </li>
+            <li>
+              <a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }"
+                href="duration-easing.html#duration-easing-natural-easing-curves" data-qp-ui-data-id="qp:4">自然缓动曲线</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="article-list">
+
+          <div id="duration-easing-speed" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:1">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+              速度
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure-figure col-3">
+                    <div class="module">
+                      <p>当元素在移动或者形变时，速度应足够快，快到可以避免用户等待，但同时也要足够慢，慢到过渡动画可以被理解。保持过渡简短，因为用户会频繁的看到这些过渡动画。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="speed-figure-caption-0" controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/QuickResponse_01_QuickDo_v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/QuickResponse_01_QuickDo_v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="speed-figure-caption-0">
+                          <p class="s-tag-caption do">正确示例</p>
+                          <p>动画要足够快，这样用户无需等待动画结束。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="speed-figure-caption-1" controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/QuickResponse_01_QuickDont_v3.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/QuickResponse_01_QuickDont_v3.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="speed-figure-caption-1">
+                          <p class="s-tag-caption dont">错误示例</p>
+                          <p>不要使动画过慢，因为这样会导致不必要的延迟。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="duration-easing-dynamic-durations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:2">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:2">
+              动态时长
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>与其对所有的动效都使用相同的持续时间，不如根据移动距离，物体的速度以及形变来调整每个动效的时长。</p>
+                      <p><a
+                          href="movement.html#movement-movement-in-out-of-screen-bounds">元素离开屏幕时</a>可以使用较短的动效时长，因为这不需要引起用户的注意。
+                      </p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video aria-describedby="dynamic-durations-figure-caption-0" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/DynamicDurations_01_LongDistance-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/DynamicDurations_01_LongDistance-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="dynamic-durations-figure-caption-0">
+                          <p>物体需要移动较长距离、或者面积的变化较大时，需要使用较长的动画时长。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2">
+                    <div class="module"></div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video aria-describedby="dynamic-durations-figure-caption-1" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/DynamicDurations_02_ShortDistance-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/DynamicDurations_02_ShortDistance-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="dynamic-durations-figure-caption-1">
+                          <p>物体需要移动的距离较短、或者面积的变化较小时，需要使用较短的动效时长，这样动画看起来不会显得很缓慢。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="duration-easing-common-durations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:3">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:3">
+              常用时长
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <div class="article-content">
+              <div>
+                <div class="col-list">
+                  <section class="module-figure col-2 h2-spacing">
+                    <div class="module">
+                      <h2>移动端</h2>
+                      <p>移动端的过渡时长通常在 300ms 内，根据情况可做如下调整：</p>
+                      <ul class="lst-kix_j29t0uw7155t-0 start">
+                        <li>幅度大、复杂的、全屏过渡动画可能需要更长的持续时间，可以长达 375ms</li>
+                        <li>元素进入屏幕需要的时长为 225ms</li>
+                        <li>元素离开屏幕需要的时长为 195ms</li>
+                      </ul>
+                      <p>超过 400ms 的过渡动画可能会感觉太慢。</p>
+                      <h2>大屏设备</h2>
+                      <p>在大屏设备上，相同时间内，元素长距离移动时，速度的峰值会比短距离移动时更大。更大的屏幕需要更长的过渡时长，以确保元素不会移动过快。</p>
+                      <h2>平板</h2>
+                      <p>平板上的过渡时长会比手机上的长 30%。例如，在手机上需要 300ms 的过渡，在平板上需要增加到 390ms。</p>
+                      <h2>可穿戴设备</h2>
+                      <p>可穿戴设备上的过渡时长会比手机上的短 30%。例如，在手机上需要 300ms 的过渡，在可穿戴设备上需要减少到 210ms。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 71.0526315789%">
+                            <video aria-describedby="common-durations-figure-caption-0" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/CommonDurations_01_3Devices_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/CommonDurations_01_3Devices_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="common-durations-figure-caption-0">
+                          <p>因为在大屏设备上，元素需要移动更长的距离，所以过渡动画会比小屏设备稍慢一点。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2 h2-spacing">
+                    <div class="module">
+                      <h2>桌面端</h2>
+                      <p>桌面端的动画应该比手机端更快、更简单。动画的持续时间应保持在 150ms 到 200ms 之间。</p>
+                      <p>桌面端的过渡动画可能不太明显，所以应该比手机端的动画更敏捷快速。</p>
+                      <p>Web 端复杂的动画通常会掉帧（除非使用了 GPU 加速）。更短的过渡时间可以让动画不那么引人注目。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 57.8947368421%">
+                            <video aria-describedby="common-durations-figure-caption-1" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/CommonDurations_02_Desktop_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/CommonDurations_02_Desktop_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="common-durations-figure-caption-1">
+                          <p>桌面端的过渡动画会更快。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="duration-easing-natural-easing-curves" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:4">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:4">
+              自然缓动曲线
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+            <div class="article-content">
+              <div>
+                <p>自然缓动曲线会影响元素的速度、不透明度和缩放。</p>
+                <div class="col-list">
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>动画中加速度和减速度的改变应该平滑，这样才不会显得呆板。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_01_CurveNoCurve_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_01_CurveNoCurve_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2">
+                    <div class="module">
+                      <p>当加速度和减速度不对称时，动画会显得更自然和愉悦。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_00_AsymetricCurve_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_00_AsymetricCurve_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module col-1 h1-spacing">
+                    <div class="module">
+                      <h1>缓动曲线</h1>
+                      <p>根据所使用的平台或软件不同，缓动曲线会有不同的命名。这份指南把它们称为标准曲线、减速曲线、加速曲线和夏普曲线。</p>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2 h1-spacing">
+                    <div class="module">
+                      <h1>标准曲线</h1>
+                      <p>标准曲线（也称为 “ease in out” ）是最常见的缓动曲线。元素会在屏幕上的位置之间快速加速，缓慢减速。它主要用于材料变大变小，以及其他属性改变的动画。</p>
+                      <p>更多信息详见<a href="movement.html#movement-movement-within-screen-bounds">屏幕内的移动</a>。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video controls="" loop="" preload="metadata">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_02_StandardCurve_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_02_StandardCurve_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-module col-2">
+                    <div class="module"></div>
+                    <div class="module">
+                      <table class="s-tag-table">
+                        <tbody>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>平台</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>约定</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>Android</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>FastOutSlowInInterpolator</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>iOS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>[[CAMediaTimingFunction alloc]
+                                initWithControlPoints:0.4f:0.0f:0.2f:1.0f]</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>CSS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>cubic-bezier(0.4, 0.0, 0.2, 1);</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>After Effects</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>Outgoing Velocity: 40%<br>
+                                Incoming Velocity: 80%</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2 h1-spacing">
+                    <div class="module">
+                      <h1>减速曲线</h1>
+                      <p>使用减速曲线（也称为 “ease out” ）时，元素会全速进入屏幕，然后缓慢减速到目标位置。</p>
+                      <p>减速期间，元素可能会放大尺寸（到 100%）或不透明度（到 100%）。在一些情况下，当元素以 0% 的不透明度进入屏幕时，可能会从比原始尺寸更大的尺寸略微收缩一点。</p>
+                      <p>更多信息详见<a href="movement.html#movement-movement-in-out-of-screen-bounds">进出屏幕时的移动</a>。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_03_DecelerationCurve_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_03_DecelerationCurve_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-module col-2">
+                    <div class="module"></div>
+                    <div class="module">
+                      <table class="s-tag-table">
+                        <tbody>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>平台</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>约定</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>Android</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>LinearOutSlowInInterpolator</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>iOS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p> [[CAMediaTimingFunction alloc] initWithControlPoints:0.0f:0.0f:0.2f:1.0f]</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>CSS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>cubic-bezier(0.0, 0.0, 0.2, 1);</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>After Effects</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>Outgoing Velocity: 0%<br> Incoming Velocity: 80%</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2 h1-spacing">
+                    <div class="module">
+                      <h1>加速曲线</h1>
+                      <p>使用加速曲线（也称为 “ease in” ）时，元素会全速离开屏幕。离开屏幕时不会减速。</p>
+                      <p>在动画开始时会加速，并可能缩小尺寸（到 0%）或不透明度（到 0%）。在一些情况下，当元素以 0% 的不透明度离开屏幕时，同时可能会放大或缩小尺寸。</p>
+                      <p>更多细节详见<a href="movement.html#movement-movement-in-out-of-screen-bounds">进出屏幕时的移动</a>。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_04_AccelerationCurve_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_04_AccelerationCurve_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-module col-2">
+                    <div class="module"></div>
+                    <div class="module">
+                      <table class="s-tag-table">
+                        <tbody>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>平台</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>约定</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>Android</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>FastOutLinearInInterpolator</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>iOS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>[CAMediaTimingFunction alloc] initWithControlPoints:0.4f:0.0f:1.0f:1.0f]<br></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>CSS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>cubic-bezier(0.4, 0.0, 1, 1);<br>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>After Effects</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>Outgoing Velocity: 40%<br> Incoming Velocity: 0%</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  <section class="module-figure col-2 h1-spacing">
+                    <div class="module">
+                      <h1>夏普曲线<br>
+                      </h1>
+                      <p>使用夏普曲线（也称为 “ease in out” ）时，元素会很快的加速和减速。主要用在已有的元素离开屏幕后重新返回时。</p>
+                      <p>元素可以在屏幕的起始点快速加速，然后以对称曲线快速减速到离开屏幕的点。它的减速度比标准曲线快，因为在离开屏幕时并不存在明确的路径。元素可能在任何时候返回。</p>
+                      <p>更多细节详见<a href="movement.html#movement-movement-in-out-of-screen-bounds">退出屏幕时的移动</a>。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 1520px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 46.0526315789%">
+                            <video controls="" loop="" preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_05_SharpCurve_v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/duration-easing/NaturalEasing_05_SharpCurve_v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-module col-2">
+                    <div class="module"></div>
+                    <div class="module">
+                      <table class="s-tag-table">
+                        <tbody>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>平台</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>约定</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>Android</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>-</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>iOS </p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>-</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>CSS</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>cubic-bezier(0.4, 0.0, 0.6, 1);</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="1" rowspan="1">
+                              <p>After Effects</p>
+                            </td>
+                            <td colspan="1" rowspan="1">
+                              <p>Outgoing Velocity: 40%<br> Incoming Velocity: 40%</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gas-last-div-inner-bottom">
+      <style>
+        .adsbygoogle_last_div_inner_bottom {
+          width: 100%;
+          height: 100px;
+          margin-bottom: -50px;
+          margin-top: 20px;
+        }
+      </style>
+      <ins class="adsbygoogle adsbygoogle_last_div_inner_bottom" style="display:block"
+        data-ad-client="ca-pub-4466345895756968" data-ad-slot="9945643291"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+
+
+
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+      <div class="footer-grid-L section-material-design color-cyan">
+        <a class="footer-text" href="introduction.html">
+          <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+          <span class="direction">上一页</span><span class="screen-reader">:</span>
+          <div>概述</div>
+        </a>
+      </div>
+      <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+      <div class="footer-grid-R section-what-is-material color-cyan">
+        <a class="footer-text" href="environment.html">
+          <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+          <span class="direction">下一页</span><span class="screen-reader">:</span>
+          <div>环境</div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

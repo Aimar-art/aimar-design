@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+  <meta charset="utf-8">
+  <link href="../css/mcss.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>GDC动效设计指南</title>
+
+
+  <!-- javascript -->
+  <!-- javascript -->
+  <!-- javascript -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-88818678-1');
+  </script>
+  <script src="../js/majs.js"></script>
+  <script src="../js/page.js"></script>
+  <script src="../js/index.js"></script>
+
+
+
+
+  <!-- 样式 -->
+  <!-- 样式 -->
+  <!-- 样式 -->
+
+  <style>
+    @import url(../css/mcss.css);
+    @import url(../css/style.css);
+    @import url(../css/index.css);
+  </style>
+</head>
+
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+  data-qp-ui="{ 'Mask': {} }">
+
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <!-- 头部 -->
+  <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+    <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+      <div class="header-title">
+        <span class="section-title">动效原则-原则</span>
+        <span class="chapter-title"><span class="title-separator">–</span> Motion Devices</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <!-- 汉堡菜单 -->
+  <nav>
+    <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+      <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+    </button>
+  </nav>
+
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+  <!-- 搜索 -->
+
+  <form id="search-form" action="https://cn.bing.com/search" method="GET">
+    <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+      <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+      <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+      <input name="q" type="text" id="search-input" autocomplete="off">
+      <label for="search-input">Search</label>
+    </div>
+  </form>
+
+
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+  <!-- 侧边栏 -->
+
+  <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+    <div class="side-nav-wrapper ">
+      <div>
+        <span id="logo">
+          <img src="../images/s.svg" width="185px" />
+        </span>
+
+        <nav>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">设计指南</dt>
+            <dd><a class="nav_selected" href="introduction.html">概述</a><a href="environment.html">环境</a><a
+                href="material-properties.html">属性</a><a href="elevation-shadows.html">层次 & 阴影</a><a
+                href="whats-new.html">最近更新</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+            <dd><a href="../motion/material-motion.html">原则</a><a href="../motion/duration-easing.html">时长 &
+                缓动</a><a href="../motion/movement.html">变化</a><a href="../motion/transforming-material.html">组合</a><a
+                href="../motion/choreography.html">过渡</a><a href="../motion/creative-customization.html">自定义动画</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+            <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a><a
+                href="../style/writing.html">书写</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">布局</dt>
+            <dd><a href="../layout/principles.html">原则</a><a href="../layout/units-measurements.html">单位 &
+                度量</a><a href="../layout/metrics-keylines.html">度量标准 & 关键线</a><a
+                href="../layout/structure.html">结构</a><a href="../layout/responsive-ui.html">响应式
+                UI</a><a href="../layout/split-screen.html">分屏</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+            <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                href="../components/bottom-sheets.html">底部卡片</a><a href="../components/buttons.html">按钮</a><a
+                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                href="../components/data-tables.html">数据表格</a><a href="../components/dialogs.html">对话框</a><a
+                href="../components/dividers.html">分隔线</a><a href="../components/expansion-panels.html">扩展面板</a><a
+                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                href="../components/lists-controls.html">列表控件</a><a href="../components/menus.html">菜单</a><a
+                href="../components/pickers.html">选择器</a><a href="../components/progress-activity.html">进度 & 活动状态</a><a
+                href="../components/selection-controls.html">选择控件</a><a href="../components/sliders.html">滑块</a><a
+                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                href="../components/steppers.html">步进器</a><a href="../components/subheaders.html">副标题</a><a
+                href="../components/tabs.html">Tab
+                选项卡</a><a href="../components/text-fields.html">文本框</a><a href="../components/toolbars.html">工具栏</a><a
+                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+            <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                href="../patterns/data-formats.html">AC</a><a href="../patterns/empty-states.html">DVR</a><a
+                href="../patterns/errors.html">FOTA</a><a href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                href="../patterns/loading-images.html">场景引擎</a><a href="../patterns/navigation.html">天气服务</a><a
+                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                href="../patterns/notifications.html">注册登陆</a><a href="../patterns/offline-states.html">消息中心</a><a
+                href="../patterns/permissions.html">系统设置</a><a href="../patterns/scrolling-techniques.html">能量管理</a><a
+                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                href="../patterns/settings.html">违章查询</a><a href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">仪表</dt>
+            <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                href="../growth-communications/onboarding.html">本地功能</a><a
+                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                href="../growth-communications/gesture-education.html">经典模式</a><a
+                href="../growth-communications/gesture-education.html">越野模式</a> </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+            <dd><a href="../usability/accessibility.html">副屏</a><a href="../usability/accessibility.html">HUD</a>
+              <a href="../usability/accessibility.html">智能后视镜</a>
+              <a href="../usability/bidirectionality.html">车载语音助手</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+            <dd><a href="../platforms/platform-adaptation.html">平台适配</a><a href="../platforms/android.html">Android</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+            <dd><a href="devices/devices.html">动效设计资源</a><a href="../resources/layout-templates.html">动画术语</a><a
+                href="../resources/roboto-noto-fonts.html">字体</a><a href="../resources/sticker-sheets-icons.html">贴片 &
+                图标</a><a href="../resources/shadows.html">阴影</a> </dd>
+          </dl>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- 正文 -->
+  <!-- 正文 -->
+  <!-- 正文 -->
+
+  <div id="grid-cont">
+    <section class="grid_outer chapter">
+
+      <h1 class="chapter-title">原则</h1>
+
+
+      <div class="chapter-content">
+
+        <div class="article-content chapter-intro">
+          <div>
+            <h1>在人机界面的世界中，动效用于描述空间关系、功能以及提供优雅流畅的交互效果。</h1>
+          </div>
+          <div class="article-content">
+            <div>
+              <div class="col-list">
+                <section class="figure-figure-figure col-3">
+                  <div class="figure">
+                    <figure class="s-tag-media">
+                      <div class="media" style="max-width: 721px">
+                        <div class="frame " style="padding-top: 99.8613037448%">
+                          <img alt="" src="//cdn.w3cbus.com/mdui.org/design/static/media/style/color/components.png"
+                            loading="lazy">
+                        </div>
+                      </div>
+                    </figure>
+                    </br>
+                    <h3><strong>自然流畅</strong></h3>
+                    <p>减少闪烁、元素大范围消失/出现。</p>
+                  </div>
+                  <div class="figure">
+                    <figure class="s-tag-media">
+                      <div class="media" style="max-width: 720px">
+                        <div class="frame " style="padding-top: 100.0%">
+                          <img alt="" src="//cdn.w3cbus.com/mdui.org/design/static/media/style/color/accessibility.png"
+                            loading="lazy">
+                        </div>
+                      </div>
+                    </figure>
+                    </br>
+                    <h3><strong>清晰肯定</strong></h3>
+                    <p>目的明确、层次清晰,实现精准操作。</p>
+                  </div>
+                  <div class="figure">
+                    <figure class="s-tag-media">
+                      <div class="media" style="max-width: 721px">
+                        <div class="frame " style="padding-top: 99.8613037448%">
+                          <img alt="" src="//cdn.w3cbus.com/mdui.org/design/static/media/style/color/UI.png"
+                            loading="lazy">
+                        </div>
+                      </div>
+                    </figure>
+                    </br>
+                    <h3><strong>高效愉悦</strong></h3>
+                    <p>高效同时也要注意用户的情感友好度。</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="article-list">
+
+          <div id="material-motion-why-does-motion-matter" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:1">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+              为什么动效很重要?
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img"
+                viewBox="0 0 10 10" aria-labelledby="title desc">
+                <title>Expand and collapse content</title>
+                <desc>An arrow that points down when collapsed and points up when expanded.</desc>
+                <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583">
+                </polygon>
+              </svg>
+            </h2>
+
+            <div class="article-content">
+              <div>
+                <p>动效展示了应用的组织方式和功能。</p>
+                <p>动效可以：</p>
+                <ul class="lst-kix_so1jjix4kui4-0 start">
+                  <li>引导用户在视图中的视觉焦点</li>
+                  <li>提示用户完成手势操作后会发生什么</li>
+                  <li>暗示元素间的等级和空间关系</li>
+                  <li>让用户忽视系统背后发生的事情（比如抓取内容、或加载下一个视图）</li>
+                  <li>使应用更有个性、更优雅、更令人愉悦</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="material-motion-how-does-material-move" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+            data-qp-ui-data-id="qp:2">
+            <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:2">
+              动态对象如何运动?
+            </h2>
+            <div class="article-content">
+              <div>
+                <p>动效环境从现实世界的力学中吸取灵感，如重力和摩擦力。这些力显示了用户如何和屏幕上的元素交互，以及元素之间的相互影响。</p>
+                <p>运动中的材料有以下特性：</p>
+                <div class="col-list">
+                  <section class="module-figure col-2 h2-spacing">
+                    <div class="module">
+                      <h2>反映敏捷</h2>
+                      <p>动态对象通常充满活力。它可以快速准确地在用户输入的位置做出响应。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media">
+                          <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                            <video aria-describedby="how-does-material-move-figure-caption-0" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Responsive_01_Durations-v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Responsive_01_Durations-v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-0">
+                          <p>在设备上，长一点的动画时间在 300-400ms 之间，短一点的动画时间在 150-200ms 之间。动画时间太长会让用户感觉迟钝，太短会感觉难以跟上。</p>
+                          <p>更多信息详见<a href="duration-easing.html#duration-easing-common-durations">常见的动画时间</a>。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure-figure col-3">
+                    <div class="module"></div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-1" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Responsive_02_Feedback-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Responsive_02_Feedback-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-1">
+                          <p>用户输入时会立即出现涟漪，从用户的触点向外扩散。浮动的卡片指示了卡片处于激活状态。</p>
+                          <p>更多信息详见<a href="choreography.html#choreography-radial-reaction">径向反映</a>。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-2" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Responsive_03_SurfaceConnection-v3.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Responsive_03_SurfaceConnection-v3.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-2">
+                          <p>展示了新创建的元素和创建者之间的联系。</p>
+                          <p>更多信息详见<a href="choreography.html#choreography-creation">创建</a>。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure col-2 h2-spacing">
+                    <div class="module">
+                      <h2>自然的</h2>
+                      <p>受到了真实世界中的力学的启发，材料会很自然的移动。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media">
+                          <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                            <video aria-describedby="how-does-material-move-figure-caption-3" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Natural_01_Easing-v1.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Natural_01_Easing-v1.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-3">
+                          <p>在现实世界中，物体的加速度和减速度会受到物体自身的重量和表面摩擦力的影响，因此在 Material Design 中，物体不会突然开始运动，也不会突然停止。</p>
+                          <p>更多信息详见<a href="duration-easing.html#duration-easing-natural-easing-curves">自然缓动曲线</a>。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure-figure col-3">
+                    <div class="module"></div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-4" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Natural_02_Arc-v3.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Natural_02_Arc-v3.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-4">
+                          <p>现实世界中的力，如重力，会启发物体沿着曲线运动，而不是直线运动。</p>
+                          <p>更多信息详见<a href="movement.html#movement-movement-within-screen-bounds">移动</a>。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-5" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Natural_03_Transform-v3.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Natural_03_Transform-v3.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-5">
+                          <p>材料的形变也遵守曲线的运动轨迹。</p>
+                          <p>更多信息详见<a href="transforming-material.html">材料转换</a>。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure-figure col-3 h2-spacing">
+                    <div class="module">
+                      <h2>有意识的</h2>
+                      <p>材料可以感知周围环境，包括用户和周围的其他材料。它可以被吸引到其他材料上，并以此响应用户的意图。</p>
+                      <p>更多信息详见<a href="choreography.html">编排</a>。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-6" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Aware_01_Choreo-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Aware_01_Choreo-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-6">
+                          <p>当元素转换到视图中时，它们和它们周围的元素会以某种方式编排在一起，以此来定义它们之间的关系。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-7" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Aware_02_MoveAway-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Aware_02_MoveAway-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-7">
+                          <p>材料可以把其他材料挤出视图。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure-module col-3">
+                    <div class="module"></div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-8" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Aware_03_Magnets-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Aware_03_Magnets-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-8">
+                          <p>元素可以吸引其他元素，并在接近一个元素时加入到这个元素中，成为一个新的元素。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="module"></div>
+                  </section>
+                </div>
+                <div class="col-list">
+                  <section class="module-figure-figure col-3 h2-spacing">
+                    <div class="module">
+                      <h2>有意图的</h2>
+                      <p>运动中的材料会指引用户在正确的时间聚焦于正确的位置。</p>
+                      <p>更多信息详见<a href="choreography.html#choreography-continuity">连续性</a>。</p>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-9" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_01_Focus-v3.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_01_Focus-v3.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-9">
+                          <p>转换可以指引用户前往交互的下一步。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-10" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_03_Disabled-v2.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_03_Disabled-v2.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-10">
+                          <p>移动可以传达出不同的信息，例如操作是否不可用。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </section>
+                  <section class="module-figure-module col-3">
+                    <div class="module"></div>
+                    <div class="figure">
+                      <figure class="s-tag-media">
+                        <div class="media" style="max-width: 720px">
+                          <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                            style="padding-top: 100.0%">
+                            <video aria-describedby="how-does-material-move-figure-caption-11" controls="" loop=""
+                              preload="auto">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_02_Ring-v3.webm"
+                                type="video/webm">
+                              <source
+                                src="//cdn.w3cbus.com/mdui.org/design/static/media/motion/material-motion/Intentional_02_Ring-v3.mp4"
+                                type="video/mp4">
+                              </source>
+                              </source>
+                            </video>
+                          </div>
+                        </div>
+                        <figcaption id="how-does-material-move-figure-caption-11">
+                          <p>动画可以把用户的焦点聚集到需要用户注意的元素上。</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="module"></div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gas-last-div-inner-bottom" style="margin-bottom: -100px">
+    </div>
+  </div>
+
+
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <!-- 底部 -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+      <div class="footer-grid-L section-material-design color-cyan">
+        <a class="footer-text" href="introduction.html">
+          <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+          <span class="direction">上一页</span><span class="screen-reader">:</span>
+          <div>概述</div>
+        </a>
+      </div>
+      <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+      <div class="footer-grid-R section-what-is-material color-cyan">
+        <a class="footer-text" href="environment.html">
+          <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+          <span class="direction">下一页</span><span class="screen-reader">:</span>
+          <div>环境</div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

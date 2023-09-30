@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../css/mcss.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>GDC动效设计指南</title>
+    <link rel="stylesheet" media="screen" href="../YB_Automobile/transform/css/cpwe.css">
+
+    <!-- javascript -->
+    <!-- javascript -->
+    <!-- javascript -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-88818678-1');
+    </script>
+    <script src="../js/majs.js"></script>
+    <script src="../js/page.js"></script>
+    <script src="../js/index.js"></script>
+
+    <!-- 样式 -->
+    <!-- 样式 -->
+    <!-- 样式 -->
+
+    <style>
+        @import url(../css/mcss.css);
+        @import url(../css/style.css);
+        @import url(../css/index.css);
+        @import url(../ZN_DesignGuide/css/elevation.css);
+    </style>
+</head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+    data-qp-ui="{ 'Mask': {} }">
+
+    <!-- 头部 -->
+    <!-- 头部 -->
+    <!-- 头部 -->
+    <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+        <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+            <div class="header-title">
+                <span class="section-title">白天模式仪表表盘动效</span>
+                <span class="chapter-title"><span class="title-separator">–</span> Dynamic effect</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 汉堡菜单 -->
+    <!-- 汉堡菜单 -->
+    <!-- 汉堡菜单 -->
+    <nav>
+        <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+            <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+        </button>
+    </nav>
+
+    <!-- 搜索 -->
+    <!-- 搜索 -->
+    <!-- 搜索 -->
+
+    <form id="search-form" action="https://cn.bing.com/search" method="GET">
+        <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+            <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+            <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+            <input name="q" type="text" id="search-input" autocomplete="off">
+            <label for="search-input">Search</label>
+        </div>
+    </form>
+
+
+    <!-- 侧边栏 -->
+    <!-- 侧边栏 -->
+    <!-- 侧边栏 -->
+
+    <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+        <div class="side-nav-wrapper ">
+            <div>
+                <span id="logo">
+                    <a href="../Dynamic design guide.html">
+                        <img src="../images/s.svg" width="185px" />
+                    </a>
+                </span>
+
+                <nav>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">设计指南</dt>
+                        <dd><a href="../ZN_DesignGuide/gs_introduction.html">概述</a><a
+                                href="../ZN_DesignGuide/hj_environment.html">环境</a><a
+                                href="../ZN_DesignGuide/sx_attribute.html">属性</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+                        <dd><a href="YZ_DynamicPrinciple/yz_principle.html">原则</a><a
+                                href="YZ_DynamicPrinciple/qx_easing.html">动画曲线</a><a
+                                href="../motion/movement.html">移动</a><a
+                                href="../motion/transforming-material.html">形变</a><a
+                                href="../motion/choreography.html">组合</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+                        <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+                        <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                                href="../components/bottom-sheets.html">底部卡片</a><a
+                                href="../components/buttons.html">按钮</a><a
+                                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                                href="../components/data-tables.html">数据表格</a><a
+                                href="../components/dialogs.html">对话框</a><a href="../components/dividers.html">分隔线</a><a
+                                href="../components/expansion-panels.html">扩展面板</a><a
+                                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                                href="../components/lists-controls.html">列表控件</a><a
+                                href="../components/menus.html">菜单</a><a href="../components/pickers.html">选择器</a><a
+                                href="../components/progress-activity.html">进度 & 活动状态</a><a
+                                href="../components/selection-controls.html">选择控件</a><a
+                                href="../components/sliders.html">滑块</a><a
+                                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                                href="../components/steppers.html">步进器</a><a
+                                href="../components/subheaders.html">副标题</a><a href="../components/tabs.html">Tab
+                                选项卡</a><a href="../components/text-fields.html">文本框</a><a
+                                href="../components/toolbars.html">工具栏</a><a
+                                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+                        <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                                href="../patterns/data-formats.html">AC</a><a
+                                href="../patterns/empty-states.html">DVR</a><a href="../patterns/errors.html">FOTA</a><a
+                                href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                                href="../patterns/loading-images.html">场景引擎</a><a
+                                href="../patterns/navigation.html">天气服务</a><a
+                                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                                href="../patterns/notifications.html">注册登陆</a><a
+                                href="../patterns/offline-states.html">消息中心</a><a
+                                href="../patterns/permissions.html">系统设置</a><a
+                                href="../patterns/scrolling-techniques.html">能量管理</a><a
+                                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                                href="../patterns/settings.html">违章查询</a><a
+                                href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">仪表</dt>
+                        <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                                href="../growth-communications/onboarding.html">本地功能</a><a
+                                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                                href="../growth-communications/gesture-education.html">经典模式</a><a
+                                href="../YB_Automobile/yy_cross.html">越野模式</a>
+                            <a href="../YB_Automobile/sd_spots.html">赛道模式</a>
+                            <a class="nav_selected" href="../YB_Automobile/bt_light.html">白天模式</a>
+                            <a href="../YB_Automobile/jj_mecha.html">机甲模式</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+                        <dd><a href="../usability/accessibility.html">副屏</a><a
+                                href="../usability/accessibility.html">HUD</a>
+                            <a href="../usability/accessibility.html">智能后视镜</a>
+                            <a href="../usability/bidirectionality.html">车载语音助手</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+                        <dd><a href="../platforms/platform-adaptation.html">KANZI</a><a
+                                href="../platforms/android.html">Android</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+                        <dd><a href="devices/devices.html">动效设计资源</a><a
+                                href="../resources/layout-templates.html">动画术语</a>
+                            <a href="../resources/roboto-noto-fonts.html">字体</a>
+                            <a href="../resources/sticker-sheets-icons.html">插件 & 扩展</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">变更记录</dt>
+                        <dd><a href="devices/devices.html">变更记录</a></dd>
+                    </dl>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文 -->
+    <!-- 正文 -->
+    <!-- 正文 -->
+    <div id="grid-cont">
+        <section class="grid_outer chapter">
+
+            <h1 class="chapter-title">风格概念+整体效果</h1>
+            <div class="chapter-content">
+
+
+                <!-- 概念设计 -->
+                <div id="material-motion-why-does-motion-matter" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+                    data-qp-ui-data-id="qp:1">
+                    <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+                        白天模式概念设计
+                    </h2>
+                    <div class="article-content chapter-intro">
+                        <div class="col-list">
+                            <section class="figure col-1">
+                                <div class="figure">
+                                    <figure class="s-tag-media">
+                                        <div class="media" style="max-width: 1520px">
+                                            <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                                                style="padding-top: 37.68%">
+                                                <video controls="" loop="" preload="auto">
+                                                    <source src="../images/Automobile/bt_light.webm" type="video/webm">
+                                                    </source>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 整体效果 -->
+                <div class="article-content chapter-intro">
+                    <div>
+                        </br>
+                        </br>
+                        </br>
+                        <h1>白天模式整体效果</h1>
+                        <h2>UI版本:UI_10.25_Cluster_Basic_白天模式B02_20210407.sketch</h2>
+                        <div class="col-list">
+                            <section class="figure col-1">
+                                <div class="figure">
+                                    <figure class="s-tag-media">
+                                        <div class="media" style="max-width: 1520px">
+                                            <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }" role="button"
+                                                style="padding-top: 37.68%">
+                                                <video controls="" loop="" preload="auto">
+                                                    <source src="../images/Automobile/bt_nomol.webm" type="video/webm">
+                                                    </source>
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </section>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- 白天模式UI标注 & 切图 -->
+                <div id="material-motion-why-does-motion-matter" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+                    data-qp-ui-data-id="qp:1">
+                    <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:1">
+                        白天模式UI标注 & 切图
+
+                    </h2>
+
+                    <div class="article-content">
+                        <div>
+                            <p>UI版本:UI_10.25_Cluster_Basic_白天模式B02_20210407.sketch</p>
+
+                            <div class="modulettes">
+                                <a class="modulette container gd" href="../images/Automobile/bt_UI/index.html"
+                                    target="_blank">
+                                    <img alt="" class="icon callout-icon"
+                                        src="//cdn.w3cbus.com/mdui.org/design/static/spec/images/callouts/gd.svg"
+                                        loading="lazy">
+                                    <div class="info">
+                                        <span class="subtitle">白天模式UI标注 & 切图</span>
+                                    </div>
+                                    </img>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 表盘如何运动 -->
+                <div id="material-motion-how-does-material-move" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+                    data-qp-ui-data-id="qp:2">
+                    <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:2">
+                        表盘如何运动
+                    </h2>
+
+                    <div class="article-content">
+                        <div>
+                            <p>仪表界面是一个有纵深感的三维空间, 动效在三维空间伴随着光影特效变化</p>
+                            <p>表盘的动效基础沿用内 & 外环的概念</p>
+                            <div class="col-list">
+                                <section class="module-figure col-2 h2-spacing">
+                                    <div class="module">
+                                        <h2>仪表表盘动效空间</h2>
+                                        <p>左、右表盘由内圈+粒子层+指针光晕+外圈四个结构组成</p>
+                                    </div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media">
+                                                <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-0"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_xijie.webm"
+                                                            type="video/webm">
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-0">
+                                                <p>抽象化的内圈+粒子层+指针光晕+外圈结构</p>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+                                <section class="module-figure-figure col-3">
+                                    <div class="module"></div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media" style="max-width: 720px">
+                                                <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                    role="button" style="padding-top: 100.0%">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-1"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_Outer.webm"
+                                                            type="video/webm">
+
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-1">
+                                                <p>外圈结构</p>
+
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media" style="max-width: 720px">
+                                                <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                    role="button" style="padding-top: 100.0%">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-2"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_Inner.webm"
+                                                            type="video/webm">
+
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-2">
+                                                <p>内圈结构</p>
+
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 表盘动效构成拆分 -->
+                <div id="material-motion-what-makes-a-good-transition" class="article qp-ui"
+                    data-qp-ui="{ 'ScrollSpy': {} }" data-qp-ui-data-id="qp:3">
+                    <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:3">
+                        表盘动效过程拆分
+
+                    </h2>
+
+                    <div class="article-content">
+                        <div>
+                            <p>白天模式表盘运动动效由以下几个模块组成：</p>
+
+
+                            <div class="col-list">
+                                <section class="module-figure-figure col-3 h2-spacing">
+                                    <div class="module">
+                                        <h2>表盘状态</h2>
+                                        <p>同黑夜模式一样,表盘的动效由固定/倒下/立起/倒下循环四个状态组成。一次倒下过程结构为:固定+倒下+倒下循环状态,一次立起过程为:倒下循环+立起+固定状态。
+                                        </p>
+
+                                    </div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media" style="max-width: 720px">
+                                                <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                    role="button" style="padding-top: 100.0%">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-6"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_Pointer.webm"
+                                                            type="video/webm">
+
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-6">
+                                                <p>指针扫盘动效。</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media" style="max-width: 720px">
+                                                <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                    role="button" style="padding-top: 100.0%">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-7"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_particle.webm"
+                                                            type="video/webm">
+
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-7">
+                                                <p>粒子层的动效。</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </section>
+                                <section class="module-figure-module col-3">
+                                    <div class="module"></div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media" style="max-width: 720px">
+                                                <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                    role="button" style="padding-top: 100.0%">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-8"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_down.webm"
+                                                            type="video/webm">
+
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-8">
+                                                <p>表盘倒下过程,立起过程与倒下相逆。</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="figure">
+                                        <figure class="s-tag-media">
+                                            <div class="media" style="max-width: 720px">
+                                                <div class="qp-ui frame" data-qp-ui="{ 'VideoPlayer': {} }"
+                                                    role="button" style="padding-top: 100.0%">
+                                                    <video aria-describedby="how-does-material-move-figure-caption-8"
+                                                        controls="" loop="" preload="auto">
+                                                        <source src="../images/Automobile/bt_downcoop.webm"
+                                                            type="video/webm">
+
+                                                        </source>
+                                                    </video>
+                                                </div>
+                                            </div>
+                                            <figcaption id="how-does-material-move-figure-caption-8">
+                                                <p>表盘倒下循环过程。</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="module"></div>
+                                </section>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 白天模式转场 -->
+                <div id="material-motion-implications-of-motion" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }"
+                    data-qp-ui-data-id="qp:4">
+                    <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }" data-qp-ui-data-id="qp:4">
+                        白天模式转场
+
+                    </h2>
+
+                    <div class="article-content">
+                        <div>
+                            <div class="col-list">
+                                <section class="module-figure-figure col-3">
+                                    <div class="module">
+                                        <p>白天/黑夜主题模式的切换,只做Alpha属性的变化,但应调制好动画曲线,保证各个显示层级切换的同步和差异,避免突然的白屏和黑屏现象发生。
+                                        </p>
+                                    </div>
+                                    <section class="module-figure col-2 h2-spacing">
+                                        <div class="module">
+                                            <h2>仪表端的显示层级</h2>
+                                            <p>从上到下</p>
+                                            <p> </br>QNX Default :仪表背景
+                                                </br>Android Function :多屏互动(全屏地图/导航/多媒体/电话)
+                                                </br>QNX Local :主驾屏控制区(行车电脑)
+                                                </br>Android Popup :主驾屏控制区(互动卡片)
+                                                </br>Legal Compliance :法规要求不可遮挡元素(Telltanle)</p>
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media" style="max-width: 1520px">
+                                                    <div class="frame">
+                                                        <div class="demo_bt">
+                                                            <div class="floor_bt isometric">
+                                                                <font class="appBar_f">QNXDefault</font>
+                                                                <div class="appBar_bt"></div>
+                                                                <div class="appBar_bt_01"></div>
+                                                                <div class="appBar_bt_02"></div>
+                                                                <div class="appBar_bt_03"></div>
+                                                            </div>
+
+                                                            <script id="rendered-js">
+                                                                var dialogOpener = $('.dialogOpener');
+                                                                var dialog = $('#dialog');
+                                                                var drawerOpener = $('#drawerOpener');
+                                                                var drawer = $('#drawer');
+
+                                                                dialogOpener.on('click', function () {
+                                                                    dialog.removeClass('hidden');
+                                                                });
+
+                                                                dialog.on('click', function () {
+                                                                    dialog.addClass('hidden');
+                                                                });
+
+                                                                drawerOpener.on('click', function () {
+                                                                    drawer.toggleClass('hidden');
+                                                                });
+
+                                                                drawer.on('click', function () {
+                                                                    drawer.addClass('hidden');
+                                                                });
+                                                  //# sourceURL=pen.js
+                                                            </script>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </figure>
+                                        </div>
+
+
+
+
+
+                                    </section>
+                                    <section class="module-figure col-2 h2-spacing">
+                                        <div class="module">
+                                            <h2>白天/黑夜模式线性切换</h2>
+
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media">
+                                                    <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-0"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/bt_hy_t.webm"
+                                                                type="video/webm">
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <table class="s-tag-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>对象</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>变化属性</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>持续时间</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>贝塞尔曲线数值</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>白天模式背景</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (0%~100%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>NULL</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>黑夜模式背景</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (100%~0%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>NULL</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>白天模式其他层元素</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (0%~100%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>NULL</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>黑夜模式其他层元素</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (100%~0%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>NULL</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <figcaption id="usage-figure-caption-1">
+                                                    <p class="s-tag-caption dont">错误示例</p>
+                                                    <p>线性的变化,动画中间态明显,会出现屏幕的白屏或者黑屏。</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="module-figure col-2 h2-spacing">
+                                        <div class="module">
+                                            <h2>各个层级元素变化不同步</h2>
+
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media">
+                                                    <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-0"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/bt_hy_f.webm"
+                                                                type="video/webm">
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <table class="s-tag-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>对象</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>变化属性</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>起始时间</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>持续时间</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>贝塞尔曲线数值</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>白天模式背景</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (0%~100%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>0ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.0,0.0,0.2,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>黑夜模式背景</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (100%~0%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>0ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.4,0.0,1,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>白天模式其他层元素</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (0%~100%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>100ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.4,0.0,0.2,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>黑夜模式其他层元素</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (100%~0%)</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>100ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.4,0.0,0.2,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <figcaption id="usage-figure-caption-1">
+                                                    <p class="s-tag-caption dont">错误示例</p>
+                                                    <p>各个层级元素切换的不同步,导致过渡不平滑,打乱界面的一致性。</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </section>
+                                    <section class="module-figure col-2 h2-spacing">
+                                        <div class="module">
+                                            <h2>模式切换效果的理想状态</h2>
+
+                                        </div>
+                                        <div class="figure">
+                                            <figure class="s-tag-media">
+                                                <div class="media">
+                                                    <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }" role="button">
+                                                        <video
+                                                            aria-describedby="how-does-material-move-figure-caption-0"
+                                                            controls="" loop="" preload="auto">
+                                                            <source src="../images/Automobile/bt_hy_true.webm"
+                                                                type="video/webm">
+                                                            </source>
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <table class="s-tag-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>对象</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>变化属性</p>
+                                                            </td>
+
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>持续时间</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>贝塞尔曲线数值</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>白天模式背景</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (0%~100%)</p>
+                                                            </td>
+
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.0,0.0,0.2,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>黑夜模式背景</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (100%~0%)</p>
+                                                            </td>
+
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.4,0.0,1,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>白天模式其他层元素</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (0%~100%)</p>
+                                                            </td>
+
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.4,0.0,0.2,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>黑夜模式其他层元素</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>Alpha (100%~0%)</p>
+                                                            </td>
+
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>300ms</p>
+                                                            </td>
+                                                            <td colspan="1" rowspan="1">
+                                                                <p>(0.4,0.0,0.2,1)</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <figcaption id="behavior-figure-caption-10">
+                                                    <p class="s-tag-caption do">正确示例</p>
+                                                    <p>黑夜背景全速离开屏幕,离开时不减速。</p>
+                                                    <p>白天背景全速进入屏幕,缓慢减速到目标位置。</p>
+                                                    <p>其他层级元素快速加速,缓慢减速,避免中间态卡顿。</p>
+                                                </figcaption>
+
+                                            </figure>
+                                        </div>
+                                    </section>
+
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </div>
+
+
+
+
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+            <div class="footer-grid-L section-material-design color-cyan">
+                <a class="footer-text" href="introduction.html">
+                    <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+                    <span class="direction">上一页</span><span class="screen-reader">:</span>
+                    <div>概述</div>
+                </a>
+            </div>
+            <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+            <div class="footer-grid-R section-what-is-material color-cyan">
+                <a class="footer-text" href="environment.html">
+                    <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+                    <span class="direction">下一页</span><span class="screen-reader">:</span>
+                    <div>环境</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

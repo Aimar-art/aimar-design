@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{'Futurizr': {'hasTouch': 'touch'}}">
+
+    <head>
+        <meta charset="utf-8">
+        <link href="../css/mcss.css" rel="stylesheet">
+        <link href="../css/fonts.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>GDC动效设计指南</title>
+        <link rel="stylesheet" media="screen" href="../YB_Automobile/transform/css/cpwe.css">
+    
+        <!-- javascript -->
+        <!-- javascript -->
+        <!-- javascript -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-88818678-1');
+        </script>
+        <script src="../js/majs.js"></script>
+        <script src="../js/page.js"></script>
+        <script src="../js/index.js"></script>
+    
+        <!-- 样式 -->
+        <!-- 样式 -->
+        <!-- 样式 -->
+    
+        <style>
+            @import url(../css/mcss.css);
+            @import url(../css/style.css);
+            @import url(../css/index.css);
+            @import url(../ZN_DesignGuide/css/elevation.css);
+        </style>
+    </head>
+
+<body class="site-material_ext_publish section-material-design first-chapter color-cyan qp-ui"
+    data-qp-ui="{ 'Mask': {} }">
+
+    <!-- 头部 -->
+    <!-- 头部 -->
+    <!-- 头部 -->
+    <header class="qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 72,'desktop-sm': 72,'default': 192}}">
+        <div class="header-wrapper qp-ui" data-qp-ui="{'Peekaboo': {'mobile': 28,'desktop-sm': 28,'default': 82}}">
+            <div class="header-title">
+                <span class="section-title">动效设计资源</span>
+                <span class="chapter-title"><span class="title-separator">–</span> Motion Devices</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 汉堡菜单 -->
+    <!-- 汉堡菜单 -->
+    <!-- 汉堡菜单 -->
+    <nav>
+        <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab">
+            <i class="material-icons material-spec-icon" title="Show navigation"><img src="../images/hbutton.svg"></i>
+        </button>
+    </nav>
+
+    <!-- 搜索 -->
+    <!-- 搜索 -->
+    <!-- 搜索 -->
+
+    <form id="search-form" action="https://cn.bing.com/search" method="GET">
+        <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+            <button class="search-button"><i class="material-icons"><img src="../images/search.svg"></i></button>
+            <button class="search-close-button"><i class="material-icons"><img src="../images/close.svg"></i></button>
+            <input name="q" type="text" id="search-input" autocomplete="off">
+            <label for="search-input">Search</label>
+        </div>
+    </form>
+
+
+    <!-- 侧边栏 -->
+    <!-- 侧边栏 -->
+    <!-- 侧边栏 -->
+
+    <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+        <div class="side-nav-wrapper ">
+            <div>
+                <span id="logo">
+                    <img src="../images/s.svg" width="185px" />
+                </span>
+
+                <nav>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">设计指南</dt>
+                        <dd><a class="nav_selected" href="introduction.html">概述</a><a href="environment.html">环境</a><a
+                                href="material-properties.html">属性</a><a href="elevation-shadows.html">层次 & 阴影</a><a
+                                href="whats-new.html">最近更新</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效原则</dt>
+                        <dd><a href="../motion/material-motion.html">原则</a><a href="../motion/duration-easing.html">时长 &
+                                缓动</a><a href="../motion/movement.html">变化</a><a
+                                href="../motion/transforming-material.html">组合</a><a
+                                href="../motion/choreography.html">过渡</a><a
+                                href="../motion/creative-customization.html">自定义动画</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">动效展示</dt>
+                        <dd><a href="../style/color.html">颜色</a><a href="../style/icons.html">图标</a><a
+                                href="../style/imagery.html">图像</a><a href="../style/typography.html">排版</a><a
+                                href="../style/writing.html">书写</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">布局</dt>
+                        <dd><a href="../layout/principles.html">原则</a><a href="../layout/units-measurements.html">单位 &
+                                度量</a><a href="../layout/metrics-keylines.html">度量标准 & 关键线</a><a
+                                href="../layout/structure.html">结构</a><a href="../layout/responsive-ui.html">响应式
+                                UI</a><a href="../layout/split-screen.html">分屏</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">组件库动效</dt>
+                        <dd><a href="../components/bottom-navigation.html">底部导航</a><a
+                                href="../components/bottom-sheets.html">底部卡片</a><a
+                                href="../components/buttons.html">按钮</a><a
+                                href="../components/buttons-floating-action-button.html">浮动操作按钮</a><a
+                                href="../components/cards.html">卡片</a><a href="../components/chips.html">纸片</a><a
+                                href="../components/data-tables.html">数据表格</a><a
+                                href="../components/dialogs.html">对话框</a><a href="../components/dividers.html">分隔线</a><a
+                                href="../components/expansion-panels.html">扩展面板</a><a
+                                href="../components/grid-lists.html">网格列表</a><a href="../components/lists.html">列表</a><a
+                                href="../components/lists-controls.html">列表控件</a><a
+                                href="../components/menus.html">菜单</a><a href="../components/pickers.html">选择器</a><a
+                                href="../components/progress-activity.html">进度 & 活动状态</a><a
+                                href="../components/selection-controls.html">选择控件</a><a
+                                href="../components/sliders.html">滑块</a><a
+                                href="../components/snackbars-toasts.html">Snackbars & toasts</a><a
+                                href="../components/steppers.html">步进器</a><a
+                                href="../components/subheaders.html">副标题</a><a href="../components/tabs.html">Tab
+                                选项卡</a><a href="../components/text-fields.html">文本框</a><a
+                                href="../components/toolbars.html">工具栏</a><a
+                                href="../components/tooltips.html">工具提示</a><a href="../components/widgets.html">小部件</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">中控</dt>
+                        <dd><a href="../patterns/confirmation-acknowledgement.html">360 & RVC</a><a
+                                href="../patterns/data-formats.html">AC</a><a
+                                href="../patterns/empty-states.html">DVR</a><a href="../patterns/errors.html">FOTA</a><a
+                                href="../patterns/fingerprint.html">多媒体互动广场</a><a
+                                href="../patterns/gestures.html">个人中心</a><a href="../patterns/help-feedback.html">账号 &
+                                人脸 & 声纹</a><a href="../patterns/launch-screens.html">全网搜</a><a
+                                href="../patterns/loading-images.html">场景引擎</a><a
+                                href="../patterns/navigation.html">天气服务</a><a
+                                href="../patterns/navigation-drawer.html">智慧停车</a><a
+                                href="../patterns/navigational-transitions.html">本地通讯</a><a
+                                href="../patterns/notifications.html">注册登陆</a><a
+                                href="../patterns/offline-states.html">消息中心</a><a
+                                href="../patterns/permissions.html">系统设置</a><a
+                                href="../patterns/scrolling-techniques.html">能量管理</a><a
+                                href="../patterns/search.html">车控车设</a><a href="../patterns/selection.html">车服务广场</a><a
+                                href="../patterns/settings.html">违章查询</a><a
+                                href="../patterns/swipe-to-refresh.html">代驾模式</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">仪表</dt>
+                        <dd><a href="../growth-communications/introduction.html">ADAS</a><a
+                                href="../growth-communications/onboarding.html">本地功能</a><a
+                                href="../growth-communications/feature-discovery.html">指引模式</a><a
+                                href="../growth-communications/gesture-education.html">经典模式</a><a
+                                href="../growth-communications/gesture-education.html">越野模式</a> </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">副屏及其他</dt>
+                        <dd><a href="../usability/accessibility.html">副屏</a><a
+                                href="../usability/accessibility.html">HUD</a>
+                            <a href="../usability/accessibility.html">智能后视镜</a>
+                            <a href="../usability/bidirectionality.html">车载语音助手</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">平台</dt>
+                        <dd><a href="../platforms/platform-adaptation.html">平台适配</a><a
+                                href="../platforms/android.html">Android</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">资源</dt>
+                        <dd><a href="devices/devices.html">动效设计资源</a><a
+                                href="../resources/layout-templates.html">动画术语</a><a
+                                href="../resources/roboto-noto-fonts.html">字体</a><a
+                                href="../resources/sticker-sheets-icons.html">贴片 & 图标</a><a
+                                href="../resources/shadows.html">阴影</a> </dd>
+                    </dl>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- 正文 -->
+    <!-- 正文 -->
+    <!-- 正文 -->
+
+    <div id="grid-cont">
+        <section class="grid_outer chapter">
+
+            <div class="chapter-title">
+                <h1 class="chapter-title">动画基本属性说明:</h1>
+            </div>
+            <b>1.描述动画效果及动画参数（时间，位移，缩放，透明度，旋转）。</b><br />
+            <br />
+            <b>2.描述出不同情况下的动画效果 。</b><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <!-- 曲线分类 -->
+            <!-- 曲线分类 -->
+            <!-- 常用可动画属性 -->
+            <div class="article-content">
+                <div>
+                    <div class="col-list">
+                        <section class="module-figure col-2 h1-spacing">
+                            <div class="module">
+                                <h1>常用可动画属性</h1>
+                                <p>想象一种等级结构，理论在顶端，下面是技术，再下面是属性，最底部是值。
+
+                                    手段可以被认为是理论的无限制执行，我认为类似于“风格”。
+                                    
+                                    属性是用户创造技术的特定参数，可能有位置、透明度、比例、角度、锚点、颜色宽度、形状等。
+                                    
+                                    值是实际的随时间变化而变化的数值，以此创造我们所谓的“动画”。</p>
+                            </div>
+                        </section>
+                        <section class="module-module col-2">
+                            <div class="module"></div>
+                            <div class="module">
+                                <table class="s-tag-table">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>参数名称</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>说明</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>width</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前宽度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>maxWidth</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前最大宽度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>minWidth</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前最小宽度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>height</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前高度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>maxHeight</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前最大高度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>minHeight</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前最小高度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>opacity</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前透明度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>color</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>元素当前颜色</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>top</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>顶部</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>right</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>右部</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>bottom</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>底部</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>left</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>左部</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>marginTop</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>顶部外边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>marginRight</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>右部外边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>marginBottom</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>底部外边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>marginLeft</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>左部外边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>paddingTop</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>顶部内边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>paddingRight</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>右部内边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>paddingBottom</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>下部内边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>paddingLeft</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>左部内边距离</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>backgroundColor</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>背景颜色</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>borderWidth</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>边框宽度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>borderRadius</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>圆角</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>borderColor</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>边框颜色</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>boxShadow</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>阴影模糊</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>textShadow</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>文字内容阴影模糊</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- AE常用表达式 -->
+            <div class="article-content">
+                <div>
+                    <div class="col-list">
+                        <section class="module-figure col-2 h1-spacing">
+                            <div class="module">
+                                <h1>AE常用表达式</h1>
+                                <p>表达式很类似于动力学脚本,不同的是表达式会保持始终使能,只要应用表达式之后,任何关键帧都会永久保持与之连接关系。它的计算结果为某一特定时间点单个图层属性的单个值。</p>
+                            </div>
+                        </section>
+                        <section class="module-module col-2">
+                            <div class="module"></div>
+                            <div class="module">
+                                <table class="s-tag-table">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>参数名称</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>用法</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>说明</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>wiggle</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>wiggle(freq, amp, octaves = 1, amp_mult = .5, t = time)</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>摆动函数</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>random</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>random(min,max)</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>随机函数</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>valueAtTime</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>valueAtTime(t)</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>返回数值或数组</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>loopOut</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>loopOut(type = "cycle", numKeyframes = 0)</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>循环函数</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Time</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Time*10</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>时间表达式</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Android属性动画 -->
+            <div class="article-content">
+                <div>
+                    <div class="col-list">
+                        <section class="module-figure col-2 h1-spacing">
+                            <div class="module">
+                                <h1>Android属性动画术语</h1>
+                                <p>顾名思义，通过控制对象的属性，来实现动画效果。官方定义：定义一个随着时间更改任何对象属性的动画，无论其是否绘制到屏幕上。</p>
+                            </div>
+                        </section>
+                        <section class="module-module col-2">
+                            <div class="module"></div>
+                            <div class="module">
+                                <table class="s-tag-table">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>参数名称</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>说明</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>translationX</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>X轴位移</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>translationY</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Y轴位移</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>translationZ</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Z轴位移</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>alpha</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>透明度</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>rotation</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>旋转</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>scaleX</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>水平缩放</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>scaleY</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>垂直缩放</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>duration</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>持续时长</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>valueType</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>属性类型</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>valueFrom</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>属性初始值</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>valueTo</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>属性结束值</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>repeatCount</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>重复次数</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>startOffset</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>延迟</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>LinearInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>线性（匀速）</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>AccelerateInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>持续加速</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>DecelerateInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>持续减速</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>AccelerateDecelerateInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>先加速后减速</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>OvershootInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>结束时回弹一下</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>AnticipateInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>开始回拉一下</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>BounceInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>结束时Q弹一下</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>CycleInterpolator</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>来回循环</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Unity 动画系统(Mecanim) 术语 -->
+            <div class="article-content">
+                <div>
+                    <div class="col-list">
+                        <section class="module-figure col-2 h1-spacing">
+                            <div class="module">
+                                <h1>Unity动画系统(Mecanim)术语</h1>
+                                <p>Unity的动画系统（被称为“Mecanim”）带有很多概念和术语，Mecanim动画系统特别适合用于类人动物骨骼的动画。由于人形骨骼在游戏中广泛使用，所以Unity提供了专门的工作流程，还有一个用于人形动画的扩展工具集。</p>
+                            </div>
+                        </section>
+                        <section class="module-module col-2">
+                            <div class="module"></div>
+                            <div class="module">
+                                <table class="s-tag-table">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>参数名称</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>说明</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation Clip</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画片段</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Avatar</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>阿凡达</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Retargeting</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>重定向</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Rigging</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>绑定</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>skinning</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>蒙皮</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animator Component</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画组件</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animator Controller</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画控制器</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation Layer</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画层</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation State Machine</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画状态机</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation Parameters</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画参数</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Unity 动画系统(Mecanim) 术语 -->
+             <div class="article-content">
+                <div>
+                    <div class="col-list">
+                        <section class="module-figure col-2 h1-spacing">
+                            <div class="module">
+                                <h1>AE动画系统术语</h1>
+                                <p>AE输出可支持的JSON样式。</p>
+                            </div>
+                        </section>
+                        <section class="module-module col-2">
+                            <div class="module"></div>
+                            <div class="module">
+                                <table class="s-tag-table">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>参数名称</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>说明</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>渐变填充</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Gradient Fill</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>渐变描边</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Gradient stroke</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Retargeting</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>重定向</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Rigging</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>绑定</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>skinning</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>蒙皮</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animator Component</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画组件</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animator Controller</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画控制器</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation Layer</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画层</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation State Machine</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画状态机</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" rowspan="1">
+                                                <p>Animation Parameters</p>
+                                            </td>
+                                            <td colspan="1" rowspan="1">
+                                                <p>动画参数</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="gas-last-div-inner-bottom" style="margin-bottom: -100px">
+            <ins class="adsbygoogle adsbygoogle_last_div_inner_bottom" style="display:block"
+                data-ad-client="ca-pub-4466345895756968" data-ad-slot="9945643291" data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <!-- 底部 -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-L section-material-design color-cyan">&nbsp;</div>
+            <div class="footer-grid-L section-material-design color-cyan">
+                <a class="footer-text" href="introduction.html">
+                    <i class="material-icons arrow-L" aria-hidden="true"><img src="../images/left.svg"></i>
+                    <span class="direction">上一页</span><span class="screen-reader">:</span>
+                    <div>概述</div>
+                </a>
+            </div>
+            <div class="footer-R section-what-is-material color-cyan">&nbsp;</div>
+            <div class="footer-grid-R section-what-is-material color-cyan">
+                <a class="footer-text" href="environment.html">
+                    <i class="material-icons arrow-R" aria-hidden="true"><img src="../images/right.svg"></i>
+                    <span class="direction">下一页</span><span class="screen-reader">:</span>
+                    <div>环境</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
